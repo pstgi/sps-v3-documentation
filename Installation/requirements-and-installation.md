@@ -9,7 +9,7 @@ v3 web servers. They are separated in three sections:
 - [Preparing the web server](#preparing-the-web-server)
 - [Setting up IIS websites for the first time](#setting-up-iis-websites-for-the-first-time)
 - [Updating the SPS+ v3 application](#updating-the-sps-v3-application)
-- 
+
 In most cases, the first two sections of this document need to be performed only once – and only
 when setting up a new server. On an existing server that already runs SPS v3, you need to follow
 the instructions for updating to a new version in the last sections.

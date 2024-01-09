@@ -7,4 +7,5 @@ the project progresses.
 
 - [Requirements and Installation of SPS+ v3](./Installation/requirements-and-installation.md)
 
-
+---
+The PSTGI Team
