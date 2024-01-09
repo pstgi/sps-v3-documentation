@@ -13,4 +13,6 @@ Navigate the table of contents below for easier access to the documentation.
   - [Updating the SPS v3 application](./Installation/requirements-and-installation.md#updating-the-sps-v3-application)
 
 ---
-The PSTGI Team
+Good luck!
+
+**The PSTGI Team**
