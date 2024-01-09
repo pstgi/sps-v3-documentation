@@ -1,7 +1,9 @@
-# SPS v3 - Main application documentation
+# SPS v3 Documentation
 
 This is the official documentation for SPS v3. It is a work in progress and will be updated as
 the project progresses.
+
+Navigate the table of contents below for easier access to the documentation.
 
 ## Table of contents
 
