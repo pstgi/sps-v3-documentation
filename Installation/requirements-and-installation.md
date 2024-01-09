@@ -1,14 +1,14 @@
-# Requirements and Installation of SPS+ v3
+# Requirements and Installation of SPS v3
 
 This document describes administrative tasks related to installing and maintaining an instance of
-the SPS+ v3 web application. It contains instructions about three distinct tasks related to SPS+
+the SPS v3 web application. It contains instructions about three distinct tasks related to SPS+
 v3 web servers. They are separated in three sections:
 
 ## Contents
 
 - [Preparing the web server](#preparing-the-web-server)
 - [Setting up IIS websites for the first time](#setting-up-iis-websites-for-the-first-time)
-- [Updating the SPS+ v3 application](#updating-the-sps-v3-application)
+- [Updating the SPS v3 application](#updating-the-sps-v3-application)
 
 In most cases, the first two sections of this document need to be performed only once – and only
 when setting up a new server. On an existing server that already runs SPS v3, you need to follow
@@ -17,11 +17,11 @@ the instructions for updating to a new version in the last sections.
 ## Preparing the web server
 
 This section describes the preparation process of a new web server, preferably a virtual machine,
-where the SPS+ v3 application will be initially installed.
+where the SPS v3 application will be initially installed.
 
 ### Hardware requirements
 
-Minimum Virtual Server requirements dedicated for only SPS+ v3:
+Minimum Virtual Server requirements dedicated for only SPS v3:
 
 | Parameter  | Minimum                                           |
 |------------|---------------------------------------------------|
@@ -41,7 +41,7 @@ General requirements for Operating System
 
 ### Installing required system components
 
-To install and run the SPS+ v3 web application, the server needs several components to be present.
+To install and run the SPS v3 web application, the server needs several components to be present.
 
 ### Installing Web Server Role
 
@@ -71,7 +71,7 @@ is checked and make sure it is installed.
 
 > If .NET Framework 4.8 is not available in the list, select .NET Framework 4.7 and finish the steps
 in this section. Once the Role installation completes, run Windows Update on the server and install
-all packages marked as required. It will upgrade .NET Framework 4.7 to a version that SPS+ v3 needs.
+all packages marked as required. It will upgrade .NET Framework 4.7 to a version that SPS v3 needs.
 Then, come back and continue the steps in this section. Alternatively, follow the instructions in
 section Confirm existence of .NET Framework 4.8 runtime below.
 
@@ -83,7 +83,7 @@ a few minutes.
 
 ### Downloading and installing URL Rewrite Module 2.1
 
-To setup the SPS+ v3 application, you need to install the URL Rewrite module version 2.1 on IIS.
+To setup the SPS v3 application, you need to install the URL Rewrite module version 2.1 on IIS.
 First, download the module installer on the server from Microsoft’s IIS website. At the bottom of
 the page, select the English version of the x64 installer.
 
@@ -92,7 +92,7 @@ the page, select the English version of the x64 installer.
 ### Install the downloaded module by double-clicking the installer and following its instructions.
 
 Downloading and installing ASP.NET Core 6.0 Hosting Bundles
-SPS+ v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
+SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
 ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoft’s page.
  
 ![file](./pictures/sps-requirements-and-installation-net-core-runtime.jpg "Download .NET 6.0")
@@ -110,13 +110,13 @@ Framework website and install them on the server.
 
 When you download the file, execute it. It will tell you if the version is already installed.
 
-These are all the steps required to prepare the server for an install SPS+ v3.?
+These are all the steps required to prepare the server for an install SPS v3.?
 
 ## Setting up IIS websites for the first time
 
-The following are instructions on how to setup IIS for a new instance of the SPS+ v3 application on
+The following are instructions on how to setup IIS for a new instance of the SPS v3 application on
 a new server. Please do not proceed with these steps if you did not complete the previous section,
-Preparing the web server of this document. If you already have SPS+ v3 installed on your server,
+Preparing the web server of this document. If you already have SPS v3 installed on your server,
 you do not need to perform any of these steps.
 
 ### Create two websites in IIS
@@ -126,7 +126,7 @@ The application has a front-end and a back-end component. Each needs a separate 
 #### Create an IIS website for API component
 
 Create a new folder SPS v3 - API under your root IIS folder (usually C:\inetpub\wwwroot\SPS v3).
-This will be the destination root folder of the SPS+ v3 application.
+This will be the destination root folder of the SPS v3 application.
 
 Open IIS Manager, in the tree on the left, right-click Sites, then choose Add Website. In the modal
 popup, enter:
@@ -147,7 +147,7 @@ connectivity.
 #### Create a website for the front-end application
 
 Before you begin, we suggest stopping or removing the Default Web Site from your IIS. This will
-allow you to use default port 80 to access the SPS+ v3 front-end application. If you cannot do that,
+allow you to use default port 80 to access the SPS v3 front-end application. If you cannot do that,
 we suggest setting port 4200 for the front-end application.
 
 In *IIS Manager*, right-click *Sites*, then choose *Add Website*. In the modal popup, enter:
@@ -170,14 +170,14 @@ accessed. To do so, open Windows Defender Firewall and Advanced Security from Wi
 Inbound Rule. Name it “PSTGI SPS v3 API server” for easy recognition. Allow traffic to the types of
 networks you intend to use SPS v3 on.
 
-These are all the steps needed to be configured on the server for SPS+ v3 to work properly.
+These are all the steps needed to be configured on the server for SPS v3 to work properly.
 
-## Updating the SPS+ v3 application
+## Updating the SPS v3 application
 
-This section describes the process of updating an existing instance of the SPS+ v3 application,
+This section describes the process of updating an existing instance of the SPS v3 application,
 which is already running on a web server, to its latest version.
 
-If you do not have an instance of the SPS+ v3 web application running on the web server, you need
+If you do not have an instance of the SPS v3 web application running on the web server, you need
 to perform the tasks in [Preparing the web server](#preparing-the-web-server) and 
 [Setting up IIS websites for the first time](#setting-up-iis-websites-for-the-first-time) sections
 above.
@@ -203,7 +203,7 @@ as it will be required in other steps below.
 
 Before you start, backup all existing files and subfolders in the original deployment folder.
 Although the application has two websites created in IIS, it is a single folder, with a subfolder
-for the front-end component. It is enough to backup the folder which SPS+ v3 - API website points at.
+for the front-end component. It is enough to backup the folder which SPS v3 - API website points at.
 
 Stop the two websites – SPS v3 - API and SPS v3 - Web App from IIS before you continue.
 
@@ -224,7 +224,7 @@ will go to their proper locations.
 
 ![file](./pictures/sps-requirements-and-installation-backup-folder.jpg "Setup API website")
 
-Start the two websites from your IIS. After a few seconds, you can check if the SPS+ v3 application
+Start the two websites from your IIS. After a few seconds, you can check if the SPS v3 application
 is running properly. 
 
 The first load after an update will take longer than usual (up to a minute), before you can see the
