@@ -2,6 +2,12 @@
 
 These are the changes to each version that has been released in this project
 
+## v.3.2.5 (2024-02-28)
+
+- Added notification for bad Study Area polygons.
+- Fixed totals for Progression Factors historic averages.
+- Added coordinate system selection for exporting geometry data.
+
 ## v.3.2.4 (2024-02-26)
 
 - Fixed spinner on Sync Database page.
