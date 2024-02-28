@@ -14,7 +14,7 @@ Navigate the table of contents below for easier access to the documentation.
 
 ## Versions and updates
 
-THe SPS v3 project is in continuous development. New releases include new features, bug fixes,
+The SPS v3 project is in continuous development. New releases include new features, bug fixes,
 and other improvements. Information about the different versions of SPS v3 app can be found in the
 [Change Log](./CHANGELOG.md) file. 
 
