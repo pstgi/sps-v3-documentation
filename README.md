@@ -12,6 +12,15 @@ Navigate the table of contents below for easier access to the documentation.
   - [Setting up IIS websites for the first time](./Installation/requirements-and-installation.md#setting-up-iis-websites-for-the-first-time)
   - [Updating the SPS v3 application](./Installation/requirements-and-installation.md#updating-the-sps-v3-application)
 
+## Versions and updates
+
+THe SPS v3 project is in continuous development. New releases include new features, bug fixes,
+and other improvements. Information about the different versions of SPS v3 app can be found in the
+[Change Log](./CHANGELOG.md) file. 
+
+Currently, the updates are performed manually. Request an update from the PSTGI team to get the 
+latest version.
+
 ---
 Good luck!
 
