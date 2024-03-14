@@ -2,6 +2,12 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.1 (2024-03-14)
+
+- Fix issue with not saving scenario updates because of trigger messages as raised errors.
+- Removed password transfer from v3 to v1.
+- Fix misaligned panels on Sync page.
+
 ## ver.3.3.0 (2024-03-13)
 
 - Added check for validity of a School Locator batch before activating it.
