@@ -2,6 +2,14 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.3 (2024-03-21)
+
+- Reload all data after scenario calculation completes.
+
+## ver.3.3.2 (2024-03-19)
+
+- Refresh cached scenarios when a new one is created.
+
 ## ver.3.3.1 (2024-03-14)
 
 - Fix issue with not saving scenario updates because of trigger messages as raised errors.
