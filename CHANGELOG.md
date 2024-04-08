@@ -2,6 +2,21 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.4 (2024-04-08)
+
+- Added Sync-Address-from-Cloud progress to AutoProcesses table record.
+- Fixed chart failure with some selections.
+- Fix missing colours from Projection Summary charts.
+- Fix the Y-axis in charts to start from zero.
+- Added missing localization strings.
+- Added indicators for currently running calculations of scenarios.
+- Fixed issue with missing digits after decimal point.
+- Improved capitalization when exporting grids to Excel.
+- Unify number of digits after decimal point for percentages in many grids.
+- Added Long-running processes page.
+- Added user format selection to school dropdowns.
+- Many other UI improvements and bug fixes.
+
 ## ver.3.3.3 (2024-03-21)
 
 - Reload all data after scenario calculation completes.
