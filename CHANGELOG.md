@@ -2,6 +2,18 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.5 (2024-04-24)
+
+- Fixed adding programs for new schools.
+- Fixed issue of saving Schoool Info for School Locator.
+- Removed posibility to delete master, development, and registered plans.
+- Fix issue of not being able to select year in School Configuration > Enrolment.
+- Fixed wrong totals in historic enrolment.
+- Fixed exported list of students from Boundary Map.
+- Removed unnecesary change notification when phasing or shifting development plans.
+- Added access to validity details using the icon in Scenario Calculation grid.
+- Optimized loading of some pages and added other minor improvements.
+
 ## ver.3.3.4 (2024-04-08)
 
 - Added Sync-Address-from-Cloud progress to AutoProcesses table record.
@@ -12,7 +24,7 @@ These are the changes to each version that has been released in this project
 - Added indicators for currently running calculations of scenarios.
 - Fixed issue with missing digits after decimal point.
 - Improved capitalization when exporting grids to Excel.
-- Unify number of digits after decimal point for percentages in many grids.
+- Unified number of digits after decimal point for percentages in many grids.
 - Added Long-running processes page.
 - Added user format selection to school dropdowns.
 - Many other UI improvements and bug fixes.
