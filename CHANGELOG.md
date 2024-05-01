@@ -2,6 +2,14 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.6 (2024-04-30)
+
+- Decreased loading time of the app and app size.
+- Protected boundary map loading for schools with no data.
+- Unified bar and line colours in charts.
+- Fixed link to Development Plan from School Configuration > Development.
+- Sort exported projections by Year.
+
 ## ver.3.3.5 (2024-04-24)
 
 - Fixed adding programs for new schools.
