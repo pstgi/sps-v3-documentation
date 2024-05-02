@@ -38,6 +38,7 @@ General requirements for Operating System
 |------------|------------------------------------------------------------|
 | OS Version | Windows Server 2022 (any version) – licensed and activated |
 | Web server | Internet Information Server                                |
+| SQL version| Microsoft SQL Server 2019 or higher                        |
 
 ### Installing required system components
 
@@ -198,6 +199,10 @@ you would have received instructions on how to modify your setting files with th
 Locate the destination folder of the original deployment. Usually, it is the API website created in
 the IIS of that server. The default location is C:\inetpub\wwwroot\SPS v3. Make a note of this path
 as it will be required in other steps below.
+
+> When you install the application for the first time, you may have to create a folder */App_Data*
+and set full permissions for the IIS_IUSRS group on that folder. This is where the application logs
+and some temporary files will be stored.
 
 ### Deploy the new version of the application
 
