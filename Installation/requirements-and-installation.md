@@ -90,9 +90,10 @@ the page, select the English version of the x64 installer.
 
 ![file](./pictures/sps-requirements-and-installation-rewrite-module.jpg "Download URL Rewrite Module 2.1")
  
-### Install the downloaded module by double-clicking the installer and following its instructions.
+Install the downloaded module by double-clicking the installer and following its instructions.
 
-Downloading and installing ASP.NET Core 6.0 Hosting Bundles
+### Downloading and installing ASP.NET Core 6.0 Hosting Bundles.
+
 SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
 ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoft’s page.
  
@@ -138,7 +139,7 @@ popup, enter:
 
 Leave the rest of the fields with their default values and click OK.
 
-If you will be using specific Host name, set it in the Host name field. This will allow you to
+If you will be using only a specific URL, set it in the Host name field. This will allow you to
 access the API server using a specific URL and change the port as needed.
 
 ---
@@ -160,7 +161,7 @@ In *IIS Manager*, right-click *Sites*, then choose *Add Website*. In the modal p
 - Port: *80*
 - Start website immediately: *unchecked*
 
-If you will be using specific Host name, set it in the Host name field. This will allow you to
+If you will be using only a specific URL, set it in the Host name field. This will allow you to
 access the API server using a specific URL.
 
 Leave the rest of the fields with their default values and click OK.
