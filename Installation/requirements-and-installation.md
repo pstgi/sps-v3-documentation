@@ -138,6 +138,9 @@ popup, enter:
 
 Leave the rest of the fields with their default values and click OK.
 
+If you will be using specific Host name, set it in the Host name field. This will allow you to
+access the API server using a specific URL and change the port as needed.
+
 ---
 \* Port 44301 is required by the front-end component to connect to the API server application. 
 If you need to change it, please contact PSTGI support for assistance on how to setup the proper
@@ -156,7 +159,10 @@ In *IIS Manager*, right-click *Sites*, then choose *Add Website*. In the modal p
 - Physical path: *{destination_root_folder}\wwwroot\dist*
 - Port: *80*
 - Start website immediately: *unchecked*
-- 
+
+If you will be using specific Host name, set it in the Host name field. This will allow you to
+access the API server using a specific URL.
+
 Leave the rest of the fields with their default values and click OK.
 
 ![file](./pictures/sps-requirements-and-installation-web-site-2.jpg "Setup Web App website")
