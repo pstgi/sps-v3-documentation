@@ -2,6 +2,12 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.7 (2024-05-08)
+
+- Removed extra column from Feeder Analysis table.
+- Fixed error when "Hold From" school is not selected.
+- Added sorting for columns in Holding tab.
+
 ## ver.3.3.6 (2024-04-30)
 
 - Decreased loading time of the app and app size.

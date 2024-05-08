@@ -92,7 +92,7 @@ the page, select the English version of the x64 installer.
  
 Install the downloaded module by double-clicking the installer and following its instructions.
 
-### Downloading and installing ASP.NET Core 6.0 Hosting Bundles.
+### Downloading and installing ASP.NET Core 6.0 Hosting Bundles
 
 SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
 ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoft’s page.
