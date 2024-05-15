@@ -10,7 +10,7 @@ v3 web servers. They are separated in three sections:
 - [Setting up IIS websites for the first time](#setting-up-iis-websites-for-the-first-time)
 - [Updating the SPS v3 application](#updating-the-sps-v3-application)
 
-In most cases, the first two sections of this document need to be performed only once ñ and only
+In most cases, the first two sections of this document need to be performed only once ‚Äì and only
 when setting up a new server. On an existing server that already runs SPS v3, you need to follow
 the instructions for updating to a new version in the last sections.
 
@@ -36,7 +36,7 @@ General requirements for Operating System
 
 | Parameter  | Minimum                                                    |
 |------------|------------------------------------------------------------|
-| OS Version | Windows Server 2022 (any version) ñ licensed and activated |
+| OS Version | Windows Server 2022 (any version) ‚Äì licensed and activated |
 | Web server | Internet Information Server                                |
 | SQL version| Microsoft SQL Server 2019 or higher                        |
 
@@ -85,7 +85,7 @@ a few minutes.
 ### Downloading and installing URL Rewrite Module 2.1
 
 To setup the SPS v3 application, you need to install the URL Rewrite module version 2.1 on IIS.
-First, download the module installer on the server from Microsoftís IIS website. At the bottom of
+First, download the module installer on the server from Microsoft‚Äôs IIS website. At the bottom of
 the page, select the English version of the x64 installer.
 
 ![file](./pictures/sps-requirements-and-installation-rewrite-module.jpg "Download URL Rewrite Module 2.1")
@@ -95,7 +95,7 @@ Install the downloaded module by double-clicking the installer and following its
 ### Downloading and installing ASP.NET Core 6.0 Hosting Bundles
 
 SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
-ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoftís page.
+ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoft‚Äôs page.
  
 ![file](./pictures/sps-requirements-and-installation-net-core-runtime.jpg "Download .NET 6.0")
 
@@ -105,7 +105,7 @@ A component of the main app requires that .NET Framework 4.8 runtime be installe
 In some Windows Server versions, it may come from adding the Web Server role to the server via
 Server Manager. In others, you need to install it separately.
 
-It is recommended you download the 4.8.x version marked as ìrecommendedî from Microsoftís .NET
+It is recommended you download the 4.8.x version marked as ‚Äúrecommended‚Äù from Microsoft‚Äôs .NET
 Framework website and install them on the server. 
  
 ![file](./pictures/sps-requirements-and-installation-download-net-framework.jpg "Download .NET Framework 4.8")
@@ -175,7 +175,7 @@ At this point, you will have the two websites setup properly.
 
 Add inbound exception in the firewall of the server for TCP port 44301, where the API server is
 accessed. To do so, open Windows Defender Firewall and Advanced Security from Windows and add an
-Inbound Rule. Name it ìPSTGI SPS v3 API serverî for easy recognition. Allow traffic to the types of
+Inbound Rule. Name it ‚ÄúPSTGI SPS v3 API server‚Äù for easy recognition. Allow traffic to the types of
 networks you intend to use SPS v3 on.
 
 These are all the steps needed to be configured on the server for SPS v3 to work properly.
@@ -217,7 +217,7 @@ Before you start, backup all existing files and subfolders in the original deplo
 Although the application has two websites created in IIS, it is a single folder, with a subfolder
 for the front-end component. It is enough to backup the folder which SPS v3 - API website points to.
 
-Stop the two websites ñ SPS v3 - API and SPS v3 - Web App from IIS before you continue.
+Stop the two websites ‚Äì SPS v3 - API and SPS v3 - Web App from IIS before you continue.
 
 Delete all files and subfolders from the location of the original deployment, but keep */APP_DATA*
 folder to avoid having to set the permissions for that folder again.
@@ -244,5 +244,5 @@ is running properly.
 
 Loading of the first page after a restart will take longer than usual (up to a minute).
 
-- Test any functionality you usually use and if something does not look proper, please contact PSTGIís Customer Support. 
+- Test any functionality you usually use and if something does not look proper, please contact PSTGI‚Äôs Customer Support. 
 - Check the log files located in \App_Data\Logs folder for any errors.
