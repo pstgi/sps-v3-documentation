@@ -1,4 +1,4 @@
-# SPS v3 Documentation
+# PSTGI's SPS v3 - Documentation
 
 This is the official documentation for SPS v3. It is a work in progress and will be updated as
 the project progresses.
