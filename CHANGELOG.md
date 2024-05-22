@@ -2,6 +2,18 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.8 (2024-05-22)
+
+- Rearranged permission tree for clarity.
+- Allowed edit of School Custom Attribute list.
+- Added ability to sync French characters to the cloud.
+- Added French character encoding for Sync-to-Cloud.
+- Added sorting columns in Schools grid.
+- Fixed Active checkbox in Development Plan Details page working reversed.
+- Fixed reload of data after changing Separate Holding in Scenario Tools > Enrolment Projections.
+- Fixed missing total and rounding in Projection Enrolment by Grade.
+- Added link to Change Log from the version number.
+
 ## ver.3.3.7 (2024-05-08)
 
 - Removed extra column from Feeder Analysis table.
