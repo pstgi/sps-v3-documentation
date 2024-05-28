@@ -50,7 +50,7 @@ The server needs a Web Server Role installed. To add that:
 1.	Open *Server Manager*
 2.	Click on *Manage*, then *Add Roles and Features*
 
-![file](./pictures/sps-requirements-and-installation-add-roles.jpg "Add Roles and Features")
+	![file](./pictures/sps-requirements-and-installation-add-roles.jpg "Add Roles and Features")
 
 3.	When the wizard opens, click *Next>*
 4.	Select *Role based or feature-based installation*, then click *Next>*
@@ -58,17 +58,17 @@ The server needs a Web Server Role installed. To add that:
 *Next>*
 6.	On the *Select server roles* screen, check *Web Server (IIS)*
 
-![file](./pictures/sps-requirements-and-installation-select-roles.jpg "Select Role")
+	![file](./pictures/sps-requirements-and-installation-select-roles.jpg "Select Role")
 
 7.	On the pop-up, click *Add Feature* to confirm and close the pop-up
 
-![file](./pictures/sps-requirements-and-installation-include-iis.jpg "Include IIS")
+	![file](./pictures/sps-requirements-and-installation-include-iis.jpg "Include IIS")
 
 8.	After you go back to the previous page, click *Next>*
 9.	On the *Select features* screen, verify the *.NET Framework 4.8 Features > .NET Framework 4.8*
 is checked and make sure it is installed.
 
-![file](./pictures/sps-requirements-and-installation-net-framework.jpg "Add .NET Framework")
+	![file](./pictures/sps-requirements-and-installation-net-framework.jpg "Add .NET Framework")
 
 > If .NET Framework 4.8 is not available in the list, select .NET Framework 4.7 and finish the steps
 in this section. Once the Role installation completes, run Windows Update on the server and install
@@ -88,7 +88,7 @@ To setup the SPS v3 application, you need to install the URL Rewrite module vers
 First, download the module installer on the server from Microsoft’s IIS website. At the bottom of
 the page, select the English version of the x64 installer.
 
-![file](./pictures/sps-requirements-and-installation-rewrite-module.jpg "Download URL Rewrite Module 2.1")
+    ![file](./pictures/sps-requirements-and-installation-rewrite-module.jpg "Download URL Rewrite Module 2.1")
  
 Install the downloaded module by double-clicking the installer and following its instructions.
 
@@ -97,7 +97,7 @@ Install the downloaded module by double-clicking the installer and following its
 SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
 ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoft’s page.
  
-![file](./pictures/sps-requirements-and-installation-net-core-runtime.jpg "Download .NET 6.0")
+    ![file](./pictures/sps-requirements-and-installation-net-core-runtime.jpg "Download .NET 6.0")
 
 ### Confirm existence of .NET Framework 4.8 runtime
 
@@ -108,7 +108,7 @@ Server Manager. In others, you need to install it separately.
 It is recommended you download the 4.8.x version marked as “recommended” from Microsoft’s .NET
 Framework website and install them on the server. 
  
-![file](./pictures/sps-requirements-and-installation-download-net-framework.jpg "Download .NET Framework 4.8")
+    ![file](./pictures/sps-requirements-and-installation-download-net-framework.jpg "Download .NET Framework 4.8")
 
 When you download the file, execute it. It will tell you if the version is already installed.
 
@@ -148,7 +148,7 @@ If you need to change it, please contact PSTGI support for assistance on how to 
 connectivity. Alternatively, you can use the same port as the front-end application, but you will
 need a different Host name for the API server.
 
-![file](./pictures/sps-requirements-and-installation-web-site-1.jpg "Setup API website")
+    ![file](./pictures/sps-requirements-and-installation-web-site-1.jpg "Setup API website")
 
 ##### Set application pool idle timeout
 
@@ -158,7 +158,7 @@ in the tree on the left under Application Pools. Right-click on it and choose Ad
 In the modal popup, find the Idle Time-out (minutes) field and set it to 0. This will prevent the 
 application from shutting down due to inactivity.
 
-![file](./pictures/sps-requirements-and-installation-app-pool-idle-time.jpg "App Pool Idle Time-out")
+    ![file](./pictures/sps-requirements-and-installation-app-pool-idle-time.jpg "App Pool Idle Time-out")
 
 #### Create a website for the front-end application
 
@@ -177,7 +177,7 @@ access the API server using a specific URL.
 
 Leave the rest of the fields with their default values and click OK.
 
-![file](./pictures/sps-requirements-and-installation-web-site-2.jpg "Setup Web App website")
+    ![file](./pictures/sps-requirements-and-installation-web-site-2.jpg "Setup Web App website")
  
 At this point, you will have the two websites setup properly.
 
@@ -242,7 +242,7 @@ the application to run on your specific server and network.
 The original backup folder on your server (usually *D:\Backups\SPS v3 Backup\App Settings Backup*)
 would contain the original versions of all setting files within a proper folder structure. 
 
-![file](./pictures/sps-requirements-and-installation-backup-folder.jpg "Setup API website")
+    ![file](./pictures/sps-requirements-and-installation-backup-folder.jpg "Setup API website")
 
 You can
 copy the content of this folder directly inside the root folder of your installation. The files
