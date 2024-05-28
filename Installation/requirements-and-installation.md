@@ -47,39 +47,39 @@ To install and run the SPS v3 web application, the server needs several componen
 ### Installing Web Server Role
 
 The server needs a Web Server Role installed. To add that: 
-1.	Open *Server Manager*
-2.	Click on *Manage*, then *Add Roles and Features*
+1. Open *Server Manager*
+2. Click on *Manage*, then *Add Roles and Features*
 
-	![file](./pictures/sps-requirements-and-installation-add-roles.jpg "Add Roles and Features")
+    ![file](./pictures/sps-requirements-and-installation-add-roles.jpg "Add Roles and Features")
 
-3.	When the wizard opens, click *Next>*
-4.	Select *Role based or feature-based installation*, then click *Next>*
-5.	On the *Select destination server*, choose the server you are installing the feature and click
+3. When the wizard opens, click *Next>*
+4. Select *Role based or feature-based installation*, then click *Next>*
+5. On the *Select destination server*, choose the server you are installing the feature and click
 *Next>*
-6.	On the *Select server roles* screen, check *Web Server (IIS)*
+6. On the *Select server roles* screen, check *Web Server (IIS)*
 
-	![file](./pictures/sps-requirements-and-installation-select-roles.jpg "Select Role")
+    ![file](./pictures/sps-requirements-and-installation-select-roles.jpg "Select Role")
 
-7.	On the pop-up, click *Add Feature* to confirm and close the pop-up
+7. On the pop-up, click *Add Feature* to confirm and close the pop-up
 
-	![file](./pictures/sps-requirements-and-installation-include-iis.jpg "Include IIS")
+    ![file](./pictures/sps-requirements-and-installation-include-iis.jpg "Include IIS")
 
-8.	After you go back to the previous page, click *Next>*
-9.	On the *Select features* screen, verify the *.NET Framework 4.8 Features > .NET Framework 4.8*
+8. After you go back to the previous page, click *Next>*
+9. On the *Select features* screen, verify the *.NET Framework 4.8 Features > .NET Framework 4.8*
 is checked and make sure it is installed.
 
-	![file](./pictures/sps-requirements-and-installation-net-framework.jpg "Add .NET Framework")
+    ![file](./pictures/sps-requirements-and-installation-net-framework.jpg "Add .NET Framework")
 
-> If .NET Framework 4.8 is not available in the list, select .NET Framework 4.7 and finish the steps
+    > If .NET Framework 4.8 is not available in the list, select .NET Framework 4.7 and finish the steps
 in this section. Once the Role installation completes, run Windows Update on the server and install
 all packages marked as required. It will upgrade .NET Framework 4.7 to a version that SPS v3 needs.
 Then, come back and continue the steps in this section. Alternatively, follow the instructions in
 section Confirm existence of .NET Framework 4.8 runtime below.
 
-10.	Click *Next>*
-11.	On the *Web Server Role (IIS)* screen, click *Next>*
-12.	On the *Select role services*, click *Next>*
-13.	On the confirmation screen, click *Install* and wait for successful finish. The process may take
+10. Click *Next>*
+11. On the *Web Server Role (IIS)* screen, click *Next>*
+12. On the *Select role services*, click *Next>*
+13. On the confirmation screen, click *Install* and wait for successful finish. The process may take
 a few minutes.
 
 ### Downloading and installing URL Rewrite Module 2.1
