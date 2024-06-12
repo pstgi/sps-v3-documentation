@@ -2,6 +2,20 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.9 (2024-06-06)
+
+- Added migration of Development Plans Shape Data to Geometry type.
+- Expanded the field for the body of the note.
+- Fixed navigation to Yield Template modal.
+- Fixed Auto Phasing grid edit.
+- Added 'Default' as option for Auto Phasing.
+- Fixed shifting of columns and totals in Progection Summary Enrolment grid.
+- Removed storing time part in DT.
+- Fixed Phasing Tools button visibility conditions.
+- Hid Auto Phasing button depending on setting.
+- Added conversion of Development Plans SHP_DATA and centroid.
+- Other minor bug fixes and UI improvements.
+
 ## ver.3.3.8 (2024-05-22)
 
 - Rearranged permission tree for clarity.
