@@ -2,6 +2,13 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.10 (2024-06-13)
+
+- Fixed validity check preventing saving of Commulities, Municipality Planning Areas, and Program Types lookups.
+- Fixed column order for report exports not being persistent.
+- Removed duplicate columns from Projection Summary > Enrolment by School.
+- Fixed notes not refreshing when changing Master, Registered, or Development plans.
+
 ## ver.3.3.9 (2024-06-06)
 
 - Added migration of Development Plans Shape Data to Geometry type.
@@ -9,7 +16,7 @@ These are the changes to each version that has been released in this project
 - Fixed navigation to Yield Template modal.
 - Fixed Auto Phasing grid edit.
 - Added 'Default' as option for Auto Phasing.
-- Fixed shifting of columns and totals in Progection Summary Enrolment grid.
+- Fixed shifting of columns and totals in Projection Summary Enrolment grid.
 - Removed storing time part in DT.
 - Fixed Phasing Tools button visibility conditions.
 - Hid Auto Phasing button depending on setting.
