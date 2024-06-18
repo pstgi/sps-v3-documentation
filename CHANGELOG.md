@@ -2,6 +2,12 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.3.11 (2024-06-18)
+
+- Removed start time for long-running process that are running.
+- Fixed issue when new schools do not appear in scenario related dropdowns.
+- Fixed issue with not being able to update or delete phasing records.
+
 ## ver.3.3.10 (2024-06-13)
 
 - Fixed validity check preventing saving of Commulities, Municipality Planning Areas, and Program Types lookups.
