@@ -1,5 +1,11 @@
 # Set up network share
 
+> If you have upgraded an existing SPS 1.0 to SPS v3, you may already have a network share
+set up. If you do, you do not need to perform these steps unless you have migrated your SQL
+server used for SPS 1.0 to a new instance. You may also want to create a new network share
+that will be used in both SPS 1.0 and SPS v3 to fix security issues that may have been present
+in the old network share.
+
 For the data import feature to work, SPS v3 needs to have access to a network share. This
 network share is where the data files are uploaded for access by the SQL server.
 
