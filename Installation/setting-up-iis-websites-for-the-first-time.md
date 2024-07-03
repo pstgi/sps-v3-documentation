@@ -73,7 +73,7 @@ At this point, you will have the two websites setup properly.
 
 Add inbound exception in the firewall of the server for TCP port 44301, where the API server is
 accessed. To do so, open Windows Defender Firewall and Advanced Security from Windows and add an
-Inbound Rule. Name it “PSTGI SPS v3 API server” for easy recognition. Allow traffic to the types of
+Inbound Rule. Name it *PSTGI SPS v3 API server* for easy recognition. Allow traffic to the types of
 networks you intend to use SPS v3 on.
 
 These are all the steps needed to be configured on the server for SPS v3 to work properly.

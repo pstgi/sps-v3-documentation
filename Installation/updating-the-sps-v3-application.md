@@ -35,7 +35,7 @@ Before you start, backup all existing files and subfolders in the original deplo
 Although the application has two websites created in IIS, it is a single folder, with a subfolder
 for the front-end component. It is enough to backup the folder which SPS v3 - API website points to.
 
-Stop the two websites – SPS v3 - API and SPS v3 - Web App from IIS before you continue.
+Stop the two websites *SPS v3 - API* and *SPS v3 - Web App* from IIS before you continue.
 
 Delete all files and subfolders from the location of the original deployment, but keep */APP_DATA*
 folder to avoid having to set the permissions for that folder again.
@@ -62,5 +62,5 @@ is running properly.
 
 Loading of the first page after a restart will take longer than usual (up to a minute).
 
-- Test any functionality you usually use and if something does not look proper, please contact PSTGI’s Customer Support. 
+- Test any functionality you usually use and if something does not look proper, please contact PSTGI's Customer Support. 
 - Check the log files located in \App_Data\Logs folder for any errors.

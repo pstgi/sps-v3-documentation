@@ -20,7 +20,7 @@ General requirements for Operating System
 
 | Parameter  | Minimum                                                    |
 |------------|------------------------------------------------------------|
-| OS Version | Windows Server 2022 (any version) – licensed and activated |
+| OS Version | Windows Server 2022 (any version) - licensed and activated |
 | Web server | Internet Information Server                                |
 | SQL version| Microsoft SQL Server 2019 or higher                        |
 
@@ -69,7 +69,7 @@ a few minutes.
 ## Downloading and installing URL Rewrite Module 2.1
 
 To setup the SPS v3 application, you need to install the URL Rewrite module version 2.1 on IIS.
-First, download the module installer on the server from Microsoft’s IIS website. At the bottom of
+First, download the module installer on the server from Microsoft's IIS website. At the bottom of
 the page, select the English version of the x64 installer.
 
 ![file](./pictures/installation-rewrite-module.jpg "Download URL Rewrite Module 2.1")
@@ -79,7 +79,7 @@ Install the downloaded module by double-clicking the installer and following its
 ## Downloading and installing ASP.NET Core 6.0 Hosting Bundles
 
 SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
-ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoft’s page.
+ASP.NET Core Runtimes 6.0.x Hosting Bundles from Microsoft's page.
  
 ![file](./pictures/installation-net-core-runtime.jpg "Download .NET 6.0")
 
@@ -89,7 +89,7 @@ A component of the main app requires that .NET Framework 4.8 runtime be installe
 In some Windows Server versions, it may come from adding the Web Server role to the server via
 Server Manager. In others, you need to install it separately.
 
-It is recommended you download the 4.8.x version marked as “recommended” from Microsoft’s .NET
+It is recommended you download the 4.8.x version marked as 'recommended' from Microsoft's .NET
 Framework website and install them on the server. 
  
 ![file](./pictures/installation-download-net-framework.jpg "Download .NET Framework 4.8")
