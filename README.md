@@ -7,10 +7,9 @@ Navigate the table of contents below for easier access to the documentation.
 
 ## Table of contents
 
-- [Requirements and Installation of SPS v3](./Installation/requirements-and-installation.md)
-  - [Preparing the web server](./Installation/requirements-and-installation.md#preparing-the-web-server)
-  - [Setting up IIS websites for the first time](./Installation/requirements-and-installation.md#setting-up-iis-websites-for-the-first-time)
-  - [Updating the SPS v3 application](./Installation/requirements-and-installation.md#updating-the-sps-v3-application)
+- [Preparing the web server](./Installation/preparing-the-web-server.md)
+- [Setting up IIS websites for the first time](./Installation/setting-up-iis-websites-for-the-first-time.md)
+- [Updating the SPS v3 application](./Installation/updating-the-sps-v3-application.md)
 
 ## Versions and updates
 
