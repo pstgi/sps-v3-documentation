@@ -50,7 +50,7 @@ the application to run on your specific server and network.
 The original backup folder on your server (usually *D:\Backups\SPS v3 Backup\App Settings Backup*)
 would contain the original versions of all setting files within a proper folder structure. 
 
-![file](./pictures/sps-requirements-and-installation-backup-folder.jpg "Setup API website")
+![file](./pictures/installation-backup-folder.jpg "Setup API website")
 
 You can
 copy the content of this folder directly inside the root folder of your installation. The files
