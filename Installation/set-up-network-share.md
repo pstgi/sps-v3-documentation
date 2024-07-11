@@ -77,6 +77,8 @@ you need to give *Read-only* permission to that folder and its subfolders.
 
 1. Click *OK* to close the *Imports Properties* pop-up.
 
+For more information, check [Microsoft's SQL Server documentation](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/configure-file-system-permissions-for-database-engine-access).
+
 With this, you have set up the network share on the SQL server. The SQL server can read the files
 and the *pstgiimportuser* can write files to the network share.
 
