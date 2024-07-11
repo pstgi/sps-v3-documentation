@@ -6,8 +6,9 @@ server used for SPS 1.0 to a new instance. You may also want to create a new net
 that will be used in both SPS 1.0 and SPS v3 to fix security issues that may have been present
 in the old network share.
 
-For the data import feature to work, SPS v3 needs to have access to a network share. This
-network share is where the data files are uploaded for access by the SQL server.
+For the data import feature to work, SPS v3 needs to have access to a network share - a folder 
+that is on any hard drive of the SQL server made accessible by network users. This network share
+is where the data files are uploaded for access by the SQL server.
 
 > The recommended location of the network share is on the SQL server itself. These
 instructions assume that the network share is on the SQL server.
@@ -35,7 +36,7 @@ slightly depending on the version of Windows Server you are using.
 
 ![file](./pictures/installation-create-user.jpg "Create user")
 
-#### Assigning user to the network share
+#### Assigning the network user to the network share
 
 The SPS v3 expects to be able to store and retrieve files from the network share. To allow
 this, you need to assign the user you just created to the network share.
@@ -53,6 +54,31 @@ this, you need to assign the user you just created to the network share.
 
 Make a note of the network path to the folder. It should be something like `\\<server-name>\Imports`.
 You will need it to set it up in the SPS v3 System Configuration.
+
+#### Assigning the SQL SERVER user to the network share
+
+The SQL server needs to have access to the network share to read the files. To allow this,
+you need to give *Read-only* permission to that folder and its subfolders. 
+
+1. Right-click on the */Imports* folder and select *Properties*.
+1. Select the "Security" tab.
+1. Click *Edit* located under the top list.
+1. On the *Permissions for Imports* pop-up, click *Add*.
+1. Make sure that the name of the local server is selecred in the *From this location*.
+1. In the *Enter object name to select* enter *NT SERVICE\MSSQLSERVER* or *NT SERVICE\MSSQL$<instance-name>*.
+1. Click *Check Names* button. If you see another pop-up, select the name and click *OK*.
+
+    ![file](./pictures/installation-newtork-share-select-user.jpg "Share folder")
+
+1. Click *OK* to close the *Select Users or Groups* pop-up.
+1. Make sure that on the *Imports Properties* pop-up, the user is selected and has *Read & execute* permission checked.
+
+    ![file](./pictures/installation-newtork-share-set-permissions.jpg "Share folder")
+
+1. Click *OK* to close the *Imports Properties* pop-up.
+
+With this, you have set up the network share on the SQL server. The SQL server can read the files
+and the *pstgiimportuser* can write files to the network share.
 
 > **IMPORTANT!**
 > The path to the network share you created must be set in the SPS v3 System Configuration before 
