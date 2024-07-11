@@ -36,7 +36,7 @@ If you need to change it, please contact PSTGI support for assistance on how to 
 connectivity. Alternatively, you can use the same port as the front-end application, but you will
 need a different Host name for the API server.
 
-![file](./pictures/sps-requirements-and-installation-web-site-1.jpg "Setup API website")
+![file](./pictures/installation-web-site-1.jpg "Setup API website")
 
 #### Set application pool idle timeout
 
@@ -46,7 +46,7 @@ in the tree on the left under Application Pools. Right-click on it and choose Ad
 In the modal popup, find the Idle Time-out (minutes) field and set it to 0. This will prevent the 
 application from shutting down due to inactivity.
 
-![file](./pictures/sps-requirements-and-installation-app-pool-idle-time.jpg "App Pool Idle Time-out")
+![file](./pictures/installation-app-pool-idle-time.jpg "App Pool Idle Time-out")
 
 ### Create a website for the front-end application
 
@@ -65,7 +65,7 @@ access the API server using a specific URL.
 
 Leave the rest of the fields with their default values and click OK.
 
-![file](./pictures/sps-requirements-and-installation-web-site-2.jpg "Setup Web App website")
+![file](./pictures/installation-web-site-2.jpg "Setup Web App website")
  
 At this point, you will have the two websites setup properly.
 
