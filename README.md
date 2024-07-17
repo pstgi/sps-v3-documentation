@@ -9,7 +9,7 @@ Navigate the table of contents below for easier access to the documentation.
 
 - [Preparing the web server](./Installation/preparing-the-web-server.md)
 - [Setting up IIS websites for the first time](./Installation/setting-up-iis-websites-for-the-first-time.md)
-- [Setting up the network share](./Installation/set-up-network-share.md)
+- [Setting up the network share](./Installation/setting-up-network-share.md)
 - [Updating the SPS v3 application](./Installation/updating-the-sps-v3-application.md)
 
 ## Versions and updates
