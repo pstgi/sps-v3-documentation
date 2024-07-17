@@ -34,7 +34,9 @@ slightly depending on the version of Windows Server you are using.
 1. Check *Password never expires*.
 1. Click *Create*.
 
-![file](./pictures/installation-create-user.jpg "Create user")
+    ![file](./pictures/installation-create-user.jpg "Create user")
+
+1. Click *Close* to close the pop up window.
 
 #### Assigning the network user to the network share
 
@@ -47,13 +49,14 @@ this, you need to assign the user you just created to the network share.
 1. Click on the *Sharing* tab.
 1. Click the *Share* button.
 1. In the input field, enter *pstgiimportuser* and click *Add*.
-1. In the list of users below, change the permission level to *Read/Write*.
+1. In the list of users below, click on the *pstgiimportuser* user and select *Read/Write* as permission level.
 1. Click *Share* to close the window.
-
-![file](./pictures/installation-newtork-share.jpg "Share folder")
+1. Click *Done* to close the next window.
 
 Make a note of the network path to the folder. It should be something like `\\<server-name>\Imports`.
 You will need it to set it up in the SPS v3 System Configuration.
+
+![file](./pictures/installation-newtork-share.jpg "Share folder")
 
 #### Assigning the SQL SERVER user to the network share
 
@@ -65,7 +68,7 @@ you need to give *Read-only* permission to that folder and its subfolders.
 1. Click *Edit* located under the top list.
 1. On the *Permissions for Imports* pop-up, click *Add*.
 1. Make sure that the name of the local server is selecred in the *From this location*.
-1. In the *Enter object name to select* enter *NT SERVICE\MSSQLSERVER* or *NT SERVICE\MSSQL$<instance-name>*.
+1. In the *Enter object name to select* enter *NT SERVICE\MSSQLSERVER* or *NT SERVICE\MSSQL$xxx*, where *xxx* is your SQL instance name.
 1. Click *Check Names* button. If you see another pop-up, select the name and click *OK*.
 
     ![file](./pictures/installation-newtork-share-select-user.jpg "Share folder")
@@ -107,7 +110,9 @@ To create the new user on the web app server, follow these steps:
 1. Check *Password never expires*.
 1. Click *Create*.
 
-![file](./pictures/installation-create-user.jpg "Create user")
+    ![file](./pictures/installation-create-user.jpg "Create user")
+
+1. Click *Close* to close the pop up window.
 
 To add the user to the *IIS_IUSRS* group, follow these steps:
 
