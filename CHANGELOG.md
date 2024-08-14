@@ -4,6 +4,10 @@ These are the changes to each version that has been released in this project
 
 ## ver.3.4.0 (2024-08-12)
 
+- Adds IsPreselected flag for School Locator year to sync process.
+
+## ver.3.4.0 (2024-08-12)
+
 - Adds Boundary Analysis feature.
 - Exports all columns for student export to Excel.
 - Adds validation error details for bad Study Area polygons.
