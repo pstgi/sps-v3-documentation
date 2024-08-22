@@ -141,6 +141,9 @@ It would also be a member of the *IIS_IUSRS* group, which will allow it to run t
 
 ![file](./pictures/installation-iis-app-pool-set-credentials.jpg "Set App Pool credentials")
 
+> For SPS 1.0 to use the same import process and folders, you need to set the same user and 
+password in the SPS 1.0 website on IIS > Advanced settings > *Physical Path Credentials* property.
+
 At this point, you should have a folder on the SQL server that is shared on the network 
 and that the web app server can access using the user account you created.
 

@@ -2,9 +2,17 @@
 
 These are the changes to each version that has been released in this project
 
-## ver.3.4.0 (2024-08-12)
+## ver.3.4.2 (2024-08-22)
 
-- Adds IsPreselected flag for School Locator year to sync process.
+- Adds IsPreselected flag for School Locator year.
+- Improves Enrolment Projection charts to show clearer capacity data.
+- Shows facility capacity instead of OTG in Enrolment Projection charts.
+
+## ver.3.4.1 (2024-08-14)
+
+- Registered Plans are displayed with their code on Development Plan Details.
+- Fixes calculation of totals on Unit Worksheet popup.
+- Fixes wrongful error message after sync completes successfuly.
 
 ## ver.3.4.0 (2024-08-12)
 
