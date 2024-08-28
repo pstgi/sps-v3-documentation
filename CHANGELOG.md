@@ -2,6 +2,11 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.3 (2024-08-28)
+
+- Fixes issue with Unit Worksheet not calculating and saving totals properly.
+- Adds button to test Data Import prerequisites.
+
 ## ver.3.4.2 (2024-08-22)
 
 - Adds IsPreselected flag for School Locator year.
