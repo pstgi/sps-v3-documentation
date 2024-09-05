@@ -2,11 +2,27 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.4 (2024-09-05)
+
+- Fixed protection for removing Development Plans with units in Registered Plans.
+- Fixed calculation with negative values in Unit Worksheet.
+- Added filter for Unit Type in Phasing grid.
+- Added real-time calculation of total remaining units to be phased.
+- Added more information to system error messages in popup.
+- Added change guard to Registered Plan, Development Plan, and Master Plan pages.
+- Fixed disabled Save button on Building Permits > Permit Details tab.
+- Improved performance on Development Plan, Registered Plan, and Master Plan pages.
+- Disabled Esc key on all popups.
+- Sorts Phasing grid by Year, Plan, and Unit Type.
+- Fixed updated of default values for Phasing grid.
+- Fixed cell values disappearing after typing in Phasing grid.
+- Fixed mismatch of Building Permit date in summary grid.
+
 ## ver.3.4.3 (2024-08-28)
 
 - Fixes issue with Unit Worksheet not calculating and saving totals properly.
 - Calculates totals and remaining units to be phased in real-time.
-- Adds button to test Data Import prerequisites.
+- Adds button to test Data Import prerequisites (Administration > SPS Setup > System Configuration).
 
 ## ver.3.4.2 (2024-08-22)
 
