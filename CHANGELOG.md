@@ -2,6 +2,10 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.5 (2024-09-10)
+
+- Added sort and filters to Holding Rules page.
+
 ## ver.3.4.4 (2024-09-05)
 
 - Fixed protection for removing Development Plans with units in Registered Plans.
