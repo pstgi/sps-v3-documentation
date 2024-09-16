@@ -2,6 +2,10 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.6 (2024-09-16)
+
+- Refreshes the Projection tab after school calculation.
+
 ## ver.3.4.5 (2024-09-10)
 
 - Added sort and filters to Holding Rules page.
