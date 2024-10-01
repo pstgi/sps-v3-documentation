@@ -2,6 +2,17 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.7 (2024-09-25)
+
+- Preserves Program dropdown selection after navigating to School Configuration > Enrolment tab.
+- Sorts all Municipality dropdowns.
+- Added sorting of columns in School Configuration > Holding tab.
+- Improved performance for deleting multiple holding rules at a time.
+- Added refresh of many Enrolment Projection pages after saving changes on others.
+- Fixed issue when deleting a large number of Holding Rules.
+- Fixed missing actions from the header of some pages.
+- Many other UI improvements.
+
 ## ver.3.4.6 (2024-09-16)
 
 - Refreshes the Projection tab after school calculation.
