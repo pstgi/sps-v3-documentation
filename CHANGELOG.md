@@ -2,6 +2,14 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.8 (2024-10-22)
+
+- Changed grid style to separate editable, selectable, and selected state.
+- Fixed calculation when adding progression rule when enrolment equal zero.
+- Added ability to compress master batch raw data files.
+- Enabled deletion of Development connectors.
+- Fixed issue with wrong School/Program values in Default Connectors grid.
+
 ## ver.3.4.7 (2024-09-25)
 
 - Preserves Program dropdown selection after navigating to School Configuration > Enrolment tab.
