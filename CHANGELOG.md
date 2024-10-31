@@ -1,6 +1,17 @@
-# SPS Plus 3 Change Log
+﻿# SPS Plus 3 Change Log
 
 These are the changes to each version that has been released in this project
+
+## 3.4.9 (2024-10-31)
+
+- Fixed sorting of Master Batches in Geocoding page.
+- Hides unfinished Master Batches from Geocoding page dropdown.
+- Fixed wrong dataset name in Scenarios grid for time-zones past UTC.
+- Sync-from-Cloud adds missing addresses to the legacy address table.
+- Fixed missing February in Month dropdowns. 😂
+- Selects another school if preselected school is not in the newly selected scenario.
+- Improvements in progress bars.
+- Other UI improvements.
 
 ## ver.3.4.8 (2024-10-22)
 
