@@ -4,7 +4,7 @@ These are the changes to each version that has been released in this project
 
 ## 3.4.10 (2024-11-21)
 
-- Refreshes enrolment data after school enrolment calulation completes.
+- Refreshes enrolment data after school enrolment calculation completes.
 - Added icon that indicate "completed" schools in dropdowns.
 - Aligned School Configuration Projections grids.
 - Forced scrollbars on School Configuration Projections grids.
