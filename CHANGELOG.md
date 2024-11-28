@@ -2,7 +2,16 @@
 
 These are the changes to each version that has been released in this project
 
-## 3.4.10 (2024-11-21)
+## ver.3.4.11 (2024-11-28)
+
+- Filters Study Area assignments by Home board.
+- Fixed missing development plan data for scenarios other than 0.
+- Fixed month shift in scenario details when in different time-zone.
+- Added activation marker in Data Mover grid.
+- Added progress indicators for more Scenario actions.
+- Fixed deleting progression factors with conditions.
+
+## ver.3.4.10 (2024-11-21)
 
 - Refreshes enrolment data after school enrolment calculation completes.
 - Added icon that indicate "completed" schools in dropdowns.
@@ -12,7 +21,7 @@ These are the changes to each version that has been released in this project
 - Rounded values for Enrolment Projections Summary by Grade.
 - Added dialog with results after scenario action completes.
 
-## 3.4.9 (2024-10-31)
+## ver.3.4.9 (2024-10-31)
 
 - Fixed sorting of Master Batches in Geocoding page.
 - Hides unfinished Master Batches from Geocoding page dropdown.
