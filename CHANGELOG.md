@@ -2,6 +2,22 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.12 (2025-01-28)
+
+- Fixed missing permission for Feeder Analysis report.
+- Implemented deletion of completed long-running process records from Maintenance screen.
+- Fix Scenario Data Connectors not retrieving data for the selected year.
+- Fix missing columns in Enrolment Projection Details grid.
+- Fix for system error when Sub-batch types do not contain comments.
+- Update all dropdowns when scenario lock changes after update.
+- Disabled ability to change unit type once added in Unit Worksheet.
+- Change WKT to GeoJson for address suggestion endpoint.
+- Added some missing types of batches to the Data Mover tab.
+- Disabled Approved field for newly added Unit Types in Worksheet.
+- Allowed scenario selection from Scenario list.
+- Fixed lock after sync fails.
+- UI improvements.
+
 ## ver.3.4.11 (2024-11-28)
 
 - Filters Study Area assignments by Home board.
