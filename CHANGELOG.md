@@ -12,7 +12,6 @@ These are the changes to each version that has been released in this project
 - Update all dropdowns when scenario lock changes after update.
 - Disabled ability to change unit type once added in Unit Worksheet.
 - Change WKT to GeoJson for address suggestion endpoint.
-- Added some missing types of batches to the Data Mover tab.
 - Disabled Approved field for newly added Unit Types in Worksheet.
 - Allowed scenario selection from Scenario list.
 - Fixed lock after sync fails.
@@ -39,8 +38,6 @@ These are the changes to each version that has been released in this project
 
 ## ver.3.4.9 (2024-10-31)
 
-- Fixed sorting of Master Batches in Geocoding page.
-- Hides unfinished Master Batches from Geocoding page dropdown.
 - Fixed wrong dataset name in Scenarios grid for time-zones past UTC.
 - Sync-from-Cloud adds missing addresses to the legacy address table.
 - Fixed missing February in Month dropdowns. 😃
