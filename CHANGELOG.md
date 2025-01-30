@@ -2,6 +2,11 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.13 (2025-01-30)
+
+- Added sorting of Progression Rules grid.
+- Improved query for syncing address data from the cloud.
+
 ## ver.3.4.12 (2025-01-28)
 
 - Fixed missing permission for Feeder Analysis report.
