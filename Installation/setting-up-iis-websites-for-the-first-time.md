@@ -38,15 +38,18 @@ need a different Host name for the API server.
 
 ![file](./pictures/installation-web-site-1.jpg "Setup API website")
 
-#### Set application pool idle timeout
+#### Set application pool parameters
 
-To prevent the app from shutting down due to inactivity, you need to set the idle timeout of the
-application pool to 0. In IIS Manager, find the Application Pool with the same name. It is located 
-in the tree on the left under Application Pools. Right-click on it and choose Advanced Settings.
+To prevent the back-end app from shutting down due to inactivity, you need to set the idle timeout 
+of the application pool to 0. In IIS Manager, find the Application Pool with the same name. It is 
+located in the tree on the left under Application Pools. Right-click on it and choose Advanced Settings.
 In the modal popup, find the Idle Time-out (minutes) field and set it to 0. This will prevent the 
 application from shutting down due to inactivity.
 
-![file](./pictures/installation-app-pool-idle-time.jpg "App Pool Idle Time-out")
+Also, change the .NET CLR Version value to *No Managed Code*. This is optional, but is recommended as
+the app does not rely on loading the desktop CLR (.NET CLR).
+
+![file](./pictures/installation-app-pool-parameters.jpg "App Pool parameters")
 
 ### Create a website for the front-end application
 
