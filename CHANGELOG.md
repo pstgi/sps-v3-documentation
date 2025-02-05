@@ -2,6 +2,10 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.4.14 (2025-01-30)
+
+- Fixed determining the last modified on date when Extended table is empty.
+
 ## ver.3.4.13 (2025-01-30)
 
 - Added sorting of Progression Rules grid.
