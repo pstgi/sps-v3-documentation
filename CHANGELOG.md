@@ -4,7 +4,7 @@ These are the changes to each version that has been released in this project
 
 ## ver.3.4.15 (2025-02-06)
 
-- Added endpoints for new reports.
+- Added endpoints for additional reports.
 
 ## ver.3.4.14 (2025-01-30)
 
