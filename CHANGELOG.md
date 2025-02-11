@@ -1,6 +1,12 @@
-﻿# SPS Plus 3 Change Log
+﻿# PSTGI’s SPS v3 - Change Log
 
 These are the changes to each version that has been released in this project
+
+## ver.3.4.16 (2025-02-11)
+
+- Fixed missing program types in School Configuration > Adjustments tab.
+- Fixed missing school list from Schools page.
+- Warn when outbound email configuration is not set.
 
 ## ver.3.4.15 (2025-02-06)
 
