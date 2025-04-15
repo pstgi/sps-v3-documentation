@@ -81,6 +81,6 @@ networks you intend to use SPS v3 on.
 
 These are all the steps needed to be configured on the server for SPS v3 to work properly.
 
----
+___
 
 [Home](../README.md) | [Setting up the network share](./setting-up-network-share.md)
