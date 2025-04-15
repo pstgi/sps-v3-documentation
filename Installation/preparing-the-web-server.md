@@ -100,3 +100,7 @@ Framework website and install them on the server.
 When you download the file, execute it. It will tell you if the version is already installed.
 
 These are all the steps required to prepare the server for an install SPS v3.
+
+---
+
+[Home](../README.md) | [Setting up IIS websites for the first time](./setting-up-iis-websites-for-the-first-time.md)

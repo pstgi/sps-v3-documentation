@@ -147,4 +147,6 @@ password in the SPS 1.0 website on IIS > Advanced settings > *Physical Path Cred
 At this point, you should have a folder on the SQL server that is shared on the network 
 and that the web app server can access using the user account you created.
 
+---
 
+[Home](../README.md) | [Updating the SPS v3 application](./updating-the-sps-v3-application.md)

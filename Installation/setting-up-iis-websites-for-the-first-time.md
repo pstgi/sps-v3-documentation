@@ -80,3 +80,7 @@ Inbound Rule. Name it *PSTGI SPS v3 API server* for easy recognition. Allow traf
 networks you intend to use SPS v3 on.
 
 These are all the steps needed to be configured on the server for SPS v3 to work properly.
+
+---
+
+[Home](../README.md) | [Setting up the network share](./setting-up-network-share.md)

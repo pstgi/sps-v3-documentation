@@ -64,3 +64,7 @@ Loading of the first page after a restart will take longer than usual (up to a m
 
 - Test any functionality you usually use and if something does not look proper, please contact PSTGI's Customer Support. 
 - Check the log files located in \App_Data\Logs folder for any errors.
+
+--
+
+[Home](../README.md)
