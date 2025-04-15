@@ -149,4 +149,4 @@ and that the web app server can access using the user account you created.
 
 ___
 
-[Home](../README.md) | [Updating the SPS v3 application](./updating-the-sps-v3-application.md)
+[Home](../README.md) / [Updating the SPS v3 application](./updating-the-sps-v3-application.md)
