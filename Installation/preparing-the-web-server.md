@@ -79,7 +79,7 @@ Install the downloaded module by double-clicking the installer and following its
 ## Downloading and installing ASP.NET Core 6.0 Hosting Bundles
 
 SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
-minor release of [ASP.NET Core Runtimes 6 Hosting Bundles]((https://dotnet.microsoft.com/en-us/download/dotnet/6.0))
+minor release of [ASP.NET Core Runtimes 6 Hosting Bundles](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 from Microsoft's website, even with the warning that it is End-of-life. 
 
 > WARNING! Downloading versions 7, 8, or 9 will not work with the SPS v3 application.
