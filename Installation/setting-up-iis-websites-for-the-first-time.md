@@ -83,4 +83,4 @@ These are all the steps needed to be configured on the server for SPS v3 to work
 
 ___
 
-[Home](../README.md) / [Setting up the network share](./setting-up-network-share.md)
+[Home](../README.md) / Next: [Setting up the network share](./setting-up-network-share.md)

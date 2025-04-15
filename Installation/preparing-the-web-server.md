@@ -103,4 +103,4 @@ These are all the steps required to prepare the server for an install SPS v3.
 
 ___
 
-[Home](../README.md) / [Setting up IIS websites for the first time](./setting-up-iis-websites-for-the-first-time.md)
+[Home](../README.md) / Next: [Setting up IIS websites for the first time](./setting-up-iis-websites-for-the-first-time.md)
