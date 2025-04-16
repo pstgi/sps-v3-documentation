@@ -69,8 +69,9 @@ a few minutes.
 ## Downloading and installing URL Rewrite Module 2.1
 
 To setup the SPS v3 application, you need to install the URL Rewrite module version 2.1 on IIS.
-First, download the module installer on the server from Microsoft's IIS website. At the bottom of
-the page, select the English version of the x64 installer.
+Visit the [official web page](https://www.iis.net/downloads/microsoft/url-rewrite) containing the
+module installer on the server from Microsoft's IIS website. At the bottom of the page, select 
+the English version of the x64 installer.
 
 ![file](./pictures/installation-rewrite-module.jpg "Download URL Rewrite Module 2.1")
  
