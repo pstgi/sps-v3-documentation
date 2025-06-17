@@ -34,7 +34,7 @@ You will need to configure both the frontend and backend of SPS v3 to use HTTPS.
 1. Click "OK" to add the binding.
 1. Optionally, you can remove the HTTP binding by selecting it and clicking "Remove".
 
-With these stps, you have configured the frontend of SPS v3 to use HTTPS protocol.
+With these steps, you have configured the frontend of SPS v3 to use HTTPS protocol.
 
 ### Binding the SSL certificate to the backend
 
@@ -121,7 +121,7 @@ Or, when using a non-standard port:
 1. Copy it over the existing file in the *./wwwroot/dist/assets/* folder of the frontend application.
 
 These should be all the changes you need to make to configure the HTTPS protocol for SPS v3. 
-Navigate to the frontend in our borwser and verify that the application is accessible via HTTPS.
+Navigate to the frontend in our browser and verify that the application is accessible via HTTPS.
 
 ___
 
