@@ -9,6 +9,11 @@ you do not need to perform any of these steps.
 
 The application has a front-end and a back-end component. Each needs a separate website in IIS.
 
+> These instructions demonstrate the configuration of SPS v3 for using it with the HTTP protocol. 
+You can configure the HTTPS protocol during this process, by providing an SSL certificate already 
+be installed on the server. You can configure the HTTPS while following these instrustions or at a 
+later time by checking [Configuring HTTPS protocol for SPS v3](./configuring-https-protocol.md).
+
 ### Create an IIS website for API component
 
 > We suggest setting up the website files on the secondary drive of the server. This will allow
