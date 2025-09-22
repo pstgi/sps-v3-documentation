@@ -1,8 +1,33 @@
-﻿# PSTGI’s SPS v3 - Change Log
+﻿﻿﻿# PSTGI’s SPS v3 - Change Log
 
 These are the changes to each version that has been released in this project
 
-## ver.3.4.16 (2025-02-11)
+## ver.3.5.0 (2025-09-22)
+
+- OEN Import/Export feature.
+- Student and MPAC import feature.
+- Fixed "Round to whole numbers" checkbox not affecting exported values in Projection Summary.
+- Fixed Projection Summary export incorrect values.
+- Fixed School Facility tab data not sorted by Year.
+- Fixed note title length limitation.
+- Fixed duplicate records in tblSchoolPrograms when syncing.
+- Fixed correct similar addresses functionality for study areas and suggestions.
+- Fixed missing Sec column in yield templates table.
+- Fixed assignment of Study Area ID and coordinates to legacy records when downloading new cloud ones.
+- Fixed failure to save notes without title.
+- Added settings for board name and abbreviation.
+- Added "Manual Geocoding" button to Edit Master Batch modal for direct navigation to geocoding page.
+- Added setting for default legacy Coordinate Reference System for all X/Y fields.
+- Added warning when phasing years do not exist in Scenario Tools.
+- Rounded Enrolment Projection Summary data on export.
+- Sorted facility grid by year - descending.
+- Improved grid refresh logic for Census and Progression Factors.
+- Added Delete selected functionality to Development Default Connectors.
+- Added error logging to several lookup endpoints.
+- Removed automatic conversion of SHP_DATA before syncing to the cloud.
+- Improved UI component for displaying progress of long-running jobs.
+
+## ver.3.4.16 (2025-03-11)
 
 - Fixed missing program types in School Configuration > Adjustments tab.
 - Fixed missing school list from Schools page.
