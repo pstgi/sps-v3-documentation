@@ -1,6 +1,10 @@
-﻿# PSTGI's SPS v3 - Change log
+﻿# PSTGI's SPS v3 - Change Log
 
 These are the changes to each version that has been released in this project
+
+## ver.3.5.1 (2025-09-22)
+
+- Fix issue when Sync-to-Cloud fails when ran for a first time.
 
 ## ver.3.5.0 (2025-09-22)
 
