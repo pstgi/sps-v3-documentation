@@ -1,4 +1,4 @@
-﻿﻿﻿# PSTGI's SPS v3 - Change Log
+﻿# PSTGI's SPS v3 - Change log
 
 These are the changes to each version that has been released in this project
 
