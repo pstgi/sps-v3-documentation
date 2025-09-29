@@ -149,7 +149,7 @@ and that the web app server can access using the user account you created.
 
 ## Troubleshooting
 
-### Application pools stopping
+### Application pool stops
 
 If the Application Pool stops by itself after you set the custom user, check for errors in Event Viewer >
 Windows Logs > System. You may see errors like "Windows Process Activation Service (WAS) encountered a failure 
