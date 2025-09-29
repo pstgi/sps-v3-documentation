@@ -147,6 +147,27 @@ password in the SPS 1.0 website on IIS > Advanced settings > *Physical Path Cred
 At this point, you should have a folder on the SQL server that is shared on the network 
 and that the web app server can access using the user account you created.
 
+## Troubleshooting
+
+### Application pools stopping
+
+If the Application Pool stops by itself after you set the custom user, check for errors in Event Viewer >
+Windows Logs > System. You may see errors like "Windows Process Activation Service (WAS) encountered a failure 
+when it started a worker process to serve the application pool". 
+
+![file](./pictures/installation-newtork-share-was-error.jpg "WAS error")
+
+
+It usually means that the user you set does not have the permission to log in as a batch job (non-interactive
+login). To fix this, follow these steps:
+
+1. In the *Windows Start* menu, find *Local Security Policy* and open it.
+1. Go to *Local Policies* > *User Rights Assignment*.
+1. Find *Log on as a batch job* and double-click it.
+1. Add the *pstgiimportuser* user you created to the list.
+
+![file](./pictures/installation-newtork-share-batch-job.jpg "Log on as a service")
+
 ___
 
 [Home](../README.md) / Next: [Updating the SPS v3 application](./updating-the-sps-v3-application.md)
