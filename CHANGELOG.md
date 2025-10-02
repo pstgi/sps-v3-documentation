@@ -2,6 +2,12 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.2 (2025-10-02)
+
+- Increased the timeout for Sync-from-Cloud.
+- Combined duplicate Long-Running Processes permissions.
+- Include Locality field in Legacy address comparison.
+
 ## ver.3.5.1 (2025-09-22)
 
 - Fix issue when Sync-to-Cloud fails when ran for a first time.
