@@ -2,6 +2,11 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.3 (2025-10-08)
+
+- Fixed the date filters in System Logs.
+- Adjusted type of some data fields to match database schema.
+
 ## ver.3.5.2 (2025-10-02)
 
 - Increased the timeout for Sync-from-Cloud.
