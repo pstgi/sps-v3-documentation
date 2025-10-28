@@ -2,6 +2,11 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.5 (2025-10-28)
+
+- Fixed postal code map not displaying in manual geocoding operations.
+- Optimized geocoding API calls to prevent timeouts when looking up postal code address ranges.
+
 ## ver.3.5.4 (2025-10-20)
 
 - Increased timeout for Data Mover process to avoid failures on slow SQL servers.
