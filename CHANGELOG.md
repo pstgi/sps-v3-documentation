@@ -2,8 +2,22 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.7 (2025-10-30)
+
+- Added check for app configuration validity at app load.
+- Fix calculation of totals on Development totals.
+
+## ver.3.5.6 (2025-10-28)
+
+- Fixed Study Area assignment job skipping half of the records during batch processing.
+
 ## ver.3.5.5 (2025-10-28)
 
+- Fixed school alias filtering in manual geocoding operations to include all student records.
+- Added handling of leading zeros in raw student School Codes without the need for Aliases.
+- Added mapping of Study Area when a Development Plan's location is set manually.
+- Added notification to manual Geocoding page for new addresses to download.
+- Improved suggestions for short search terms matching street names.
 - Fixed postal code map not displaying in manual geocoding operations.
 - Optimized geocoding API calls to prevent timeouts when looking up postal code address ranges.
 
