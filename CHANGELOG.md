@@ -2,10 +2,19 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.9 (2025-11-04)
+
+- Removed hole artefacts from boundary polygons when created by unions.
+- Skip looking up StudyAreaID when AddressID is undefined during Geocoding.
+
+## ver.3.5.8 (2025-10-31)
+
+- Fixed duplicate insertion error in Sync-from-Cloud when downloading addresses with unit values.
+
 ## ver.3.5.7 (2025-10-30)
 
 - Added check for app configuration validity at app load.
-- Fix calculation of totals on Development totals.
+- Fixed calculation of totals on Development totals.
 
 ## ver.3.5.6 (2025-10-28)
 
