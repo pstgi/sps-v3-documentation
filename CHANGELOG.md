@@ -2,6 +2,11 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.10 (2025-11-12)
+
+- Fixed missing years from Scenario Phasing tool.
+- Modify address comparison to include Locality, if it exists.
+
 ## ver.3.5.9 (2025-11-04)
 
 - Removed hole artefacts from boundary polygons when created by unions.
