@@ -2,6 +2,28 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.12 (2025-12-01)
+
+- Fixed missing grid after saving Yield Templates.
+- Fixed Projection Summary enum binding for dropdowns.
+
+## ver.3.5.11 (2025-11-28)
+
+- Fixed permission check in new address download notification.
+- Include manually created Legacy address in promotion of type and linking to students.
+- Added support for NAD83(CSRS) / UTM zone 18N (ESPG:2959) coordinate system.
+- Added reset capabilities for Geo and Import memory cache.
+- Fixed missing Scenario Calculation progress bars.
+- Fixed displaying of schools that need scenario calculation.
+- Fixed Local Attendance calculation to use selected school's students.
+- Fixed Boundary dropdown to only show programs with Study Areas assigned.
+- Added filter persistence to Boundary Analysis page.
+- Automatically select next school when current school has no unmatched records.
+
+## ver.3.5.10 (2025-11-12)
+
+- Fixed clearing of geocoding data during Soft Reset.
+
 ## ver.3.5.10 (2025-11-12)
 
 - Fixed missing years from Scenario Phasing tool.
