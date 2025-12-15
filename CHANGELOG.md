@@ -5,7 +5,7 @@ These are the changes to each version that has been released in this project
 ## ver.3.5.12 (2025-12-01)
 
 - Fixed missing grid after saving Yield Templates.
-- Fixed Projection Summary enum binding for dropdowns.
+- Fixed Projection Summary options in dropdowns.
 
 ## ver.3.5.11 (2025-11-28)
 
