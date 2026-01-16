@@ -2,6 +2,20 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.5.13 (2026-01-16)
+
+- Added Superintendents, Zones, Age Groups, and Age Range lookup pages.
+- Redesigned System Logs page to speed up loading.
+- Decreased the packet size of address download.
+- Fixed spinner when starting Sync-to-Cloud fails.
+- Avoids duplicates in header row when exporting Students to ShapeFile.
+- Increased the scenario calculation timeout from 30 to 60 minutes.
+- Uses MPAC Zone Lookup dictionary only for MPAC imports.
+- Populates search fields even for non-standardized addresses in Geocoding.
+- Fixed exporting of School Boundaries when legacy coordinate system is selected.
+- Selects previous Municipality for MPAC in Geocoding page.
+- Corrected updating process for correcting similar addresses in Geocoding.
+
 ## ver.3.5.12 (2025-12-01)
 
 - Fixed missing grid after saving Yield Templates.
@@ -18,7 +32,7 @@ These are the changes to each version that has been released in this project
 - Fixed Local Attendance calculation to use selected school's students.
 - Fixed Boundary dropdown to only show programs with Study Areas assigned.
 - Added filter persistence to Boundary Analysis page.
-- Automatically select next school when current school has no unmatched records.
+- Automatically selects next school when current school has no unmatched records.
 
 ## ver.3.5.10 (2025-11-12)
 
