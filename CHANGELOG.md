@@ -2,6 +2,13 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.6.0 (2026-02-11)
+
+- Added Study Area Cloud Editing feature.
+- Added Enrolment import feature.
+- Added support of new geographic projections.
+- Fixed reprojection of geometries to UTM values when exporting.
+
 ## ver.3.5.13 (2026-01-16)
 
 - Added Superintendents, Zones, Age Groups, and Age Range lookup pages.
