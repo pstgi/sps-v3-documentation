@@ -2,6 +2,29 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.3.6.2 (2026-03-23)
+
+- Conversion of geographic legacy data is done in app.
+- Added support for US states.
+- Fixed accepting new Program without End Year.
+- Clears frontend cache when changing lookups.
+- Added support for EPSG: 4269 projection.
+- Allows closing modal after saving Program.
+- Allows edit in Progression Factors - Manual tab.
+- Many UI improvements and other small bug fixes.
+
+## ver.3.6.1 (2026-02-24)
+
+- Added School Program Year validation before saving.
+- Added support for EPSG: 2279 (South Texas) projections.
+- Provides more information when Scenario Dataset Refresh fails.
+- Protects from errors while reading some list School and Scenario data from database.
+- Fixed split Study Area Centroid address labels.
+- Fixed historic data in Enrolment Projections chart when 'All' is selected.
+- Fixed saving of year change in School Facilities tab.
+- Fixed missing Study Area ID when manually geocoding MPAC rcords.
+- Fixed scenario refresh error display.
+
 ## ver.3.6.0 (2026-02-11)
 
 - Added Study Area Cloud Editing feature.
