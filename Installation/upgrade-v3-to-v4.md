@@ -68,8 +68,9 @@ Set its value to `false` if you are hosting SPS on-premise. Otherwise, set its v
 **IMPORTANT!**
 
 If you have your database served from a cloud hosting and have set `IsCloudHosted` to `true`, run script 
-*SPS v4 - Convert EST to UTC - All Tables.sql* against the database. Same applies if you are moving your database
-to the cloud. Run the script after you restore it to the cloud MS SQL server.
+*SPS v4 - Convert EST to UTC - All Tables.sql* against the database. You can obtain this file from the PSTGI team as part
+of the distribution package of SPS v4. Same applies if you are moving your database from on-premise SQL server to the cloud.
+Run the script after you restore it to the cloud MS SQL server.
 
 ### Replace the following sections
 
