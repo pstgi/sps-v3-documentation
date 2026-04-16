@@ -1,12 +1,12 @@
 # Set up network share
 
-> If you have upgraded an existing SPS 1.0 to SPS v3, you may already have a network share
+> If you have upgraded an existing SPS 1.0 to SPS Plus, you may already have a network share
 set up. If you do, you do not need to perform these steps unless you have migrated your SQL
 server used for SPS 1.0 to a new instance. You may also want to create a new network share
-that will be used in both SPS 1.0 and SPS v3 to fix security issues that may have been present
+that will be used in both SPS 1.0 and SPS Plus to fix security issues that may have been present
 in the old network share.
 
-For the data import feature to work, SPS v3 needs to have access to a network share - a folder 
+For the data import feature to work, SPS Plus needs to have access to a network share - a folder 
 that is on any hard drive of the SQL server made accessible by network users. This network share
 is where the data files are uploaded for access by the SQL server.
 
@@ -27,7 +27,7 @@ slightly depending on the version of Windows Server you are using.
 1. In the three on the left, expand *Local Users and Groups* and select *Users*.
 1. In the panel on the right, click *More Actions* and select *New User*.
 1. For the User name, enter *pstgiimportuser*.
-1. For Description, enter *User for SPS v3 data import*.
+1. For Description, enter *User for SPS Plus data import*.
 1. For password enter a complex password and confirm it. Remember it as you will need it for the web app server.
 1. Uncheck *User must change password at next logon*.
 1. Check *User cannot change password*.
@@ -40,7 +40,7 @@ slightly depending on the version of Windows Server you are using.
 
 #### Assigning the network user to the network share
 
-The SPS v3 expects to be able to store and retrieve files from the network share. To allow
+The SPS Plus expects to be able to store and retrieve files from the network share. To allow
 this, you need to assign the user you just created to the network share.
 
 1. Select a location on a hard drive of the SQL server where you want to create a share folder.
@@ -54,7 +54,7 @@ this, you need to assign the user you just created to the network share.
 1. Click *Done* to close the next window.
 
 Make a note of the network path to the folder. It should be something like `\\<server-name>\Imports`.
-You will need it to set it up in the SPS v3 System Configuration.
+You will need it to set it up in the SPS Plus System Configuration.
 
 ![file](./pictures/installation-newtork-share.jpg "Share folder")
 
@@ -86,16 +86,16 @@ With this, you have set up the network share on the SQL server. The SQL server c
 and the *pstgiimportuser* can write files to the network share.
 
 > **IMPORTANT!**
-> The path to the network share you created must be set in the SPS v3 System Configuration before 
+> The path to the network share you created must be set in the SPS Plus System Configuration before 
 you can import any data. Set it after the application is installed and configured. For that, login 
-to SPS v3 as an administrator and go to *Administration* > *SPS Setup* > *System Configuration* and 
+to SPS Plus as an administrator and go to *Administration* > *SPS Setup* > *System Configuration* and 
 set the path in the *Import Folder* field.
 
 ### Creating user on the web app server
 
 The web app server needs to have access to the network share to upload files. To allow this,
 you need to create a user with the same username and password as the user on the SQL server.
-Then, you need to set the App Pool of the *SPS v3 - API* to run as this user.
+Then, you need to set the App Pool of the *SPS Plus - API* to run as this user.
 
 To create the new user on the web app server, follow these steps:
 
@@ -103,7 +103,7 @@ To create the new user on the web app server, follow these steps:
 1. In the three on the left, expand *Local Users and Groups* and select *Users*.
 1. In the panel on the right, click *More Actions* and select *New User*.
 1. For the User name, enter *pstgiimportuser*.
-1. For Description, enter *User for SPS v3 data import*.
+1. For Description, enter *User for SPS Plus data import*.
 1. For password enter the same password you used on the SQL server.
 1. Uncheck *User must change password at next logon*.
 1. Check *User cannot change password*.
@@ -125,19 +125,19 @@ To add the user to the *IIS_IUSRS* group, follow these steps:
 ![file](./pictures/installation-add-user-to-group.jpg "Add to group")
 
 At this point, you should have a user with the same username and password on both the SQL server.
-It would also be a member of the *IIS_IUSRS* group, which will allow it to run the SPS v3 backend.
+It would also be a member of the *IIS_IUSRS* group, which will allow it to run the SPS Plus backend.
 
 #### Assigning user to the App Pool
 
 1. Open IIS Manager.
-1. From *Sites*, stop the *SPS v3 - API* website, if it is running.
-1. In *Application Pools*, right-clixk *SPS v3 - API* and select *Advanced Settings*.
+1. From *Sites*, stop the *SPS Plus - API* website, if it is running.
+1. In *Application Pools*, right-click *SPS Plus - API* and select *Advanced Settings*.
 1. Find the *Identity* field and click the *...* button.
 1. Choose *Custom account*, then click *Set*.
 1. Enter the username and password you have created with the steps above.
 1. Click *OK* to close the window and set the changes.
 1. In the IIS Manager, click *Recycle* to restart the App Pool.
-1. In the *Sites* section, start the *SPS v3 - API* website.
+1. In the *Sites* section, start the *SPS Plus - API* website.
 
 ![file](./pictures/installation-iis-app-pool-set-credentials.jpg "Set App Pool credentials")
 

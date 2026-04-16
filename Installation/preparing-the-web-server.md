@@ -1,11 +1,11 @@
 # Preparing the web server
 
 This section describes the preparation process of a new web server, preferably a virtual machine,
-where the SPS v3 application will be initially installed.
+where the SPS Plus application will be initially installed.
 
 ## Hardware requirements
 
-Minimum Virtual Server requirements dedicated for only SPS v3:
+Minimum Virtual Server requirements dedicated for only SPS Plus:
 
 | Parameter  | Minimum                                           |
 |------------|---------------------------------------------------|
@@ -26,7 +26,7 @@ General requirements for Operating System
 
 ## Installing required system components
 
-To install and run the SPS v3 web application, the server needs several components to be present.
+To install and run the SPS Plus web application, the server needs several components to be present.
 
 ## Installing Web Server Role
 
@@ -49,26 +49,15 @@ The server needs a Web Server Role installed. To add that:
     ![file](./pictures/installation-include-iis.jpg "Include IIS")
 
 8. After you go back to the previous page, click *Next>*
-9. On the *Select features* screen, verify the *.NET Framework 4.8 Features > .NET Framework 4.8*
-is checked and make sure it is installed.
-
-    ![file](./pictures/installation-net-framework.jpg "Add .NET Framework")
-
-    > If .NET Framework 4.8 is not available in the list, select .NET Framework 4.7 and finish the steps
-in this section. Once the Role installation completes, run Windows Update on the server and install
-all packages marked as required. It will upgrade .NET Framework 4.7 to a version that SPS v3 needs.
-Then, come back and continue the steps in this section. Alternatively, follow the instructions in
-section Confirm existence of .NET Framework 4.8 runtime below.
-
-10. Click *Next>*
-11. On the *Web Server Role (IIS)* screen, click *Next>*
-12. On the *Select role services*, click *Next>*
-13. On the confirmation screen, click *Install* and wait for successful finish. The process may take
+9. Click *Next>*
+10. On the *Web Server Role (IIS)* screen, click *Next>*
+11. On the *Select role services*, click *Next>*
+12. On the confirmation screen, click *Install* and wait for successful finish. The process may take
 a few minutes.
 
 ## Downloading and installing URL Rewrite Module 2.1
 
-To setup the SPS v3 application, you need to install the URL Rewrite module version 2.1 on IIS.
+To setup the SPS Plus application, you need to install the URL Rewrite module version 2.1 on IIS.
 Visit the [official web page](https://www.iis.net/downloads/microsoft/url-rewrite) containing the
 module installer on the server from Microsoft's IIS website. At the bottom of the page, select 
 the English version of the x64 installer.
@@ -77,30 +66,17 @@ the English version of the x64 installer.
  
 Install the downloaded module by double-clicking the installer and following its instructions.
 
-## Downloading and installing ASP.NET Core 6.0 Hosting Bundles
+## Downloading and installing ASP.NET Core 9.0 Hosting Bundles
 
-SPS v3 is developed using .NET 6.0 (LTS). To install the required runtimes, download the latest
-minor release of [ASP.NET Core Runtimes 6 Hosting Bundles](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-from Microsoft's website, even with the warning that it is End-of-life. 
+SPS Plus is developed using .NET 9.0 (LTS). To install the required runtimes, download the latest
+release of [ASP.NET Core Runtimes 9 Hosting Bundles](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+from Microsoft's website.
 
-> WARNING! Downloading versions 7, 8, or 9 will not work with the SPS v3 application.
+> WARNING! Downloading any other major version will not work with the SPS Plus application.
  
-![file](./pictures/installation-net-core-runtime.jpg "Download .NET 6.0")
+![file](./pictures/installation-net-core-runtime.jpg "Download .NET 9.0")
 
-## Confirm existence of .NET Framework 4.8 runtime
-
-A component of the main app requires that .NET Framework 4.8 runtime be installed on the web server.
-In some Windows Server versions, it may come from adding the Web Server role to the server via
-Server Manager. In others, you need to install it separately.
-
-It is recommended you download the 4.8.x version marked as 'recommended' from Microsoft's .NET
-Framework website and install them on the server. 
- 
-![file](./pictures/installation-download-net-framework.jpg "Download .NET Framework 4.8")
-
-When you download the file, execute it. It will tell you if the version is already installed.
-
-These are all the steps required to prepare the server for an install SPS v3.
+These are all the steps required to prepare the server for an install SPS Plus.
 
 ___
 

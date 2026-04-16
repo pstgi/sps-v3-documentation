@@ -1,17 +1,13 @@
 # Updating the SPS Plus application
 
-This section describes the process of updating an existing instance of the SPS Plus application,
-from one minor version to another. For example, if you have SPS v3 installed, you can use the instructions
-to update it to a higher version of v3. Or from version of v4.x.x to higher version of v4.x.x. 
-The process is the same for any minor version update, as long as you have an instance of the SPS web application
-running on the web server.
+This section describes the process of updating an existing instance of the SPS Plus application.
 
-If you are looking for instructions on how to upgrade from SPS v3 to v4, and you have not updates your
-appsettings.json file already, please refer to [Upgrade from SPS v3 to v4](./upgrade-v3-to-v4.md)
+> If you are looking for instructions on how to upgrade from SPS Plus v3 to v4, and you have not updates your
+appsettings.json file already, please refer to [Upgrade from SPS Plus v3 to v4](./upgrade-v3-to-v4.md)
 documentation. If you have performed all steps in that documentation, you can proceed with the instructions
 in this document to update the app files.
 
-If you do not have an instance of the SPS web application running on the web server, you need
+If you do not have an instance of the SPS Plus web application running on the web server, you need
 to perform the tasks in [Preparing the web server](#preparing-the-web-server) and 
 [Setting up IIS websites for the first time](#setting-up-iis-websites-for-the-first-time) sections
 above.
@@ -41,9 +37,9 @@ and some temporary files will be stored.
 
 Before you start, backup all existing files and subfolders in the original deployment folder.
 Although the application has two websites created in IIS, it is a single folder, with a subfolder
-for the front-end component. It is enough to backup the folder which SPS v3 - API website points to.
+for the front-end component. It is enough to backup the folder which SPS Plus - API website points to.
 
-Stop the two websites *SPS v3 - API* and *SPS v3 - Web App* from IIS before you continue.
+Stop the two websites *SPS Plus - API* and *SPS Plus - Web App* from IIS before you continue.
 
 Delete all files and subfolders from the location of the original deployment, but keep */APP_DATA*
 folder to avoid having to set the permissions for that folder again.
@@ -55,7 +51,7 @@ the original files.
 > The contents of the distributable ZIP file will not contain the setting files needed to configure
 the application to run on your specific server and network.
 
-The original backup folder on your server (usually *D:\Backups\SPS v3 Backup\App Settings Backup*)
+The original backup folder on your server (usually *D:\Backups\SPS Plus Backup\App Settings Backup*)
 would contain the original versions of all setting files within a proper folder structure. 
 
 ![file](./pictures/installation-backup-folder.jpg "Setup API website")
@@ -65,7 +61,7 @@ copy the content of this folder directly inside the root folder of your installa
 will go to their proper locations - two in the root of the web app and one in a subfolder 
 *.\wwwroot\dist*.
 
-Start the two websites from your IIS. After a few seconds, you can check if the SPS v3 application
+Start the two websites from your IIS. After a few seconds, you can check if the SPS Plus application
 is running properly. 
 
 Loading of the first page after a restart will take longer than usual (up to a minute).
