@@ -76,7 +76,7 @@ Two files contain references to the domain names and protocols used by the appli
 > When you modify the configuration files, stop the frontend and the backend sites in IIS.
 Start them only after you finish modifying the files and copy them to the proper locations.
 
-Also, consider the existing backups of these files, usually located in a folder names 
+Also, consider the existing backups of these files, usually located in a folder named
 *App Settings Backup* or *SPS v3 Backup*. You can modify the files there and then copy them to the 
 correct location. These copies will have to be modified as well for future updates of the application.
 

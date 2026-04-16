@@ -22,7 +22,7 @@ These are the changes to each version that has been released in this project
 - Fixed split Study Area Centroid address labels.
 - Fixed historic data in Enrolment Projections chart when 'All' is selected.
 - Fixed saving of year change in School Facilities tab.
-- Fixed missing Study Area ID when manually geocoding MPAC rcords.
+- Fixed missing Study Area ID when manually geocoding MPAC records.
 - Fixed scenario refresh error display.
 
 ## ver.3.6.0 (2026-02-11)

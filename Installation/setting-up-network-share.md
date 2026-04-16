@@ -67,7 +67,7 @@ you need to give *Read-only* permission to that folder and its subfolders.
 1. Select the "Security" tab.
 1. Click *Edit* located under the top list.
 1. On the *Permissions for Imports* pop-up, click *Add*.
-1. Make sure that the name of the local server is selecred in the *From this location*.
+1. Make sure that the name of the local server is selected in the *From this location*.
 1. In the *Enter object name to select* enter *NT SERVICE\MSSQLSERVER* or *NT SERVICE\MSSQL$xxx*, where *xxx* is your SQL instance name.
 1. Click *Check Names* button. If you see another pop-up, select the name and click *OK*.
 
@@ -170,4 +170,4 @@ login). To fix this, follow these steps:
 
 ___
 
-[Home](../README.md) / Next: [Updating the SPS v3 application](./updating-the-sps-v3-application.md)
+[Home](../README.md) / Next: [Updating the SPS Plus application](./updating-the-sps-plus-application.md)

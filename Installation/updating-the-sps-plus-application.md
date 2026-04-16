@@ -1,9 +1,17 @@
-# Updating the SPS v3 application
+# Updating the SPS Plus application
 
-This section describes the process of updating an existing instance of the SPS v3 application,
-which is already running on a web server, to its latest version.
+This section describes the process of updating an existing instance of the SPS Plus application,
+from one minor version to another. For example, if you have SPS v3 installed, you can use the instructions
+to update it to a higher version of v3. Or from version of v4.x.x to higher version of v4.x.x. 
+The process is the same for any minor version update, as long as you have an instance of the SPS web application
+running on the web server.
 
-If you do not have an instance of the SPS v3 web application running on the web server, you need
+If you are looking for instructions on how to upgrade from SPS v3 to v4, and you have not updates your
+appsettings.json file already, please refer to [Upgrade from SPS v3 to v4](./upgrade-v3-to-v4.md)
+documentation. If you have performed all steps in that documentation, you can proceed with the instructions
+in this document to update the app files.
+
+If you do not have an instance of the SPS web application running on the web server, you need
 to perform the tasks in [Preparing the web server](#preparing-the-web-server) and 
 [Setting up IIS websites for the first time](#setting-up-iis-websites-for-the-first-time) sections
 above.
@@ -22,7 +30,7 @@ except the setting files that configure the application for your needs, such as
 you would have received instructions on how to modify your setting files with the new distributable.
 
 Locate the destination folder of the original deployment. Usually, it is the API website created in
-the IIS of that server. The default location is C:\inetpub\wwwroot\SPS v3. Make a note of this path
+the IIS of that server. The default location is C:\inetpub\wwwroot\SPS Plus. Make a note of this path
 as it will be required in other steps below.
 
 > When you install the application for the first time, you may have had to create a folder */App_Data*
