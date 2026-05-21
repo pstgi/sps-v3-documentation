@@ -2,6 +2,10 @@
 
 These are the changes to each version that has been released in this project
 
+## ver 3.6.4 (2026-05-21)
+
+- Increase timeout for exporting reports as Excel files.
+
 ## ver.3.6.3 (2026-04-21)
 
 - Fixed error exporting Students to Shape file when some records have missing coordinates.
