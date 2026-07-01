@@ -2,6 +2,12 @@
 
 These are the changes to each version that has been released in this project
 
+## ver 3.6.5 (2026-07-01)
+
+- Added support for chunked bulk parsing on cloud.
+- Fixed Programs tab error when a grade has no divisions.
+- Ensures Study Area address in Legacy table is set to 6 when updating any parts of it.
+
 ## ver 3.6.4 (2026-05-21)
 
 - Increase timeout for exporting reports as Excel files.
