@@ -1,6 +1,10 @@
-﻿# PSTGI's SPS v3 - Change Log
+﻿# PSTGI's SPS Plus - Change Log
 
 These are the changes to each version that has been released in this project
+
+## ver 3.6.6 (2026-07-03)
+
+- Added protection from invalid Study Area transformations.
 
 ## ver 3.6.5 (2026-07-01)
 
@@ -34,7 +38,7 @@ These are the changes to each version that has been released in this project
 - Fixed split Study Area Centroid address labels.
 - Fixed historic data in Enrolment Projections chart when 'All' is selected.
 - Fixed saving of year change in School Facilities tab.
-- Fixed missing Study Area ID when manually geocoding MPAC records.
+- Fixed missing Study Area ID when manually geocoding MPAC rcords.
 - Fixed scenario refresh error display.
 
 ## ver.3.6.0 (2026-02-11)
