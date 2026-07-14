@@ -1,12 +1,6 @@
 # Upgrading SPS v3 to v4
 
-When upgrading from SPS v3 to v4, you need to:
-
-- install the latest .NET 9.0 runtimes on the server where SPS is hosted,
-- obtain a copy of the distribution package of SPS v4 from the PSTGI team,
-- make changes to your appsettings.json file,
-- replace the existing SPS v3 files with the new ones from the distribution package of SPS v4,
-- copy the App Settings Backup to the website folder.
+When upgrading from SPS v3 to v4, you need to update your Windows Server and prerequisites first.
 
 ## Installing .NET 9.0 runtimes
 
@@ -26,16 +20,6 @@ The installer will detect the existing runtimes and will only install the missin
 
 You can download the download the latest release of [ASP.NET Core Runtimes 9 Hosting Bundles] from the official .NET website:
 [https://dotnet.microsoft.com/en-us/download/dotnet/9.0](https://dotnet.microsoft.com/en-us/download/dotnet/9.0).
-
-## Obtain a copy of the distribution package of SPS v4
-
-You need to contact the PSTGI team to obtain a copy of the distribution package of SPS v4. 
-You cannot download it from a public website, unless you were instructed to do so by the PSTGI team.
-
-> Do not continue with the upgrade process until you have the distribution package of SPS v4.
-
-> You have to update the appsettings.json file before you can upgrade the app files. Use the internal
-  "SPS v3 to v4 Settings Upgrader"
 
 ## Upgrading the app
 
