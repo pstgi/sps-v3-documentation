@@ -2,6 +2,37 @@
 
 These are the changes to each version that has been released in this project
 
+# ver.4.0.2 (2026-07-15)
+
+- Added more localization values.
+- Improved Study Area Assignment tab.
+- Improved build performance and reliability.
+- Some UI improvements.
+
+## ver.4.0.1 (2026-07-07)
+
+- Added multi-select of Study Areas on the Study Area Assignment page.
+- Added language selection (Canadian and US English) in the header and on the login screen.
+- Added support for large bulk address parsing on the cloud.
+- Added a button to clear the Sub-batch Types cache.
+- Improved Study Area cloud editing so updates reliably create the required records, including when Study Area IDs shift.
+- Added clearer guidance when instance configuration fails.
+- Fixed the region dropdown not refreshing after adding a new region.
+- Fixed the search filter on the Permissions tree.
+- Fixed the Programs tab error when a grade has no divisions.
+- Fixed saving of system settings in some cases.
+- Fixed import edits failing due to missing parameters.
+- Fixed the Accommodation Planner grid not refreshing after a reassignment.
+- Fixed the Sync to Cloud progress display.
+- Fixed an internal error when deleting a review area.
+- Many UI improvements and other small bug fixes.
+
+## ver.4.0.0 (2026-05-12)
+
+- Rebuilt on a modern application platform (updated framework, runtime, and interface toolkit) for better performance, security, and long-term support.
+- Refreshed the user interface across the application.
+- Carried forward all functionality from the version 3 line.
+
 ## ver 3.6.6 (2026-07-03)
 
 - Added protection from invalid Study Area transformations.
@@ -38,8 +69,9 @@ These are the changes to each version that has been released in this project
 - Fixed split Study Area Centroid address labels.
 - Fixed historic data in Enrolment Projections chart when 'All' is selected.
 - Fixed saving of year change in School Facilities tab.
-- Fixed missing Study Area ID when manually geocoding MPAC rcords.
+- Fixed missing Study Area ID when manually geocoding MPAC records.
 - Fixed scenario refresh error display.
+- Fixed reselecting 'All' programs on Boundary Map tab to always reload the data.
 
 ## ver.3.6.0 (2026-02-11)
 
