@@ -18,7 +18,7 @@ Microsoft.AspNetCore.App 9.0.xx [C:\Program Files\dotnet\shared\Microsoft.AspNet
 It is safe to download and install the latest runtimes again, even if you already have them installed. 
 The installer will detect the existing runtimes and will only install the missing ones, if any.
 
-You can download the download the latest release of [ASP.NET Core Runtimes 9 Hosting Bundles] from the official .NET website:
+You can download the latest version of **ASP.NET Core Runtimes 9 > Hosting Bundles** from the official .NET website:
 [https://dotnet.microsoft.com/en-us/download/dotnet/9.0](https://dotnet.microsoft.com/en-us/download/dotnet/9.0).
 
 ## Upgrading the app
