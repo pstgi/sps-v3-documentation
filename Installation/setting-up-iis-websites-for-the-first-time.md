@@ -43,16 +43,51 @@ need a different Host name for the API server.
 
 ![file](./pictures/installation-web-site-1.jpg "Setup API website")
 
-#### Set application pool parameters
+#### Set application pool parameters (recommended)
 
-To prevent the back-end app from shutting down due to inactivity, you need to set the idle timeout 
-of the application pool to 0. In IIS Manager, find the Application Pool with the same name. It is 
-located in the tree on the left under Application Pools. Right-click on it and choose Advanced Settings.
-In the modal popup, find the Idle Time-out (minutes) field and set it to 0. This will prevent the 
-application from shutting down due to inactivity.
+The back-end application may take a long time to initialize at first visit. With the default IIS
+settings, the application is only started when the first request arrives, so the first user after a
+restart, recycle, or period of inactivity has to wait for the full startup. The settings below make
+IIS keep the application running and warm it up automatically in the background, so users never
+experience the slow first request.
 
-Also, change the .NET CLR Version value to *No Managed Code*. This is optional, but is recommended as
-the app does not rely on loading the desktop CLR (.NET CLR).
+> The following may increase the use of energy and memory on the server, but it is recommended 
+for a better user experience.
+
+First, install the *Application Initialization* feature of IIS, if it is not installed already. Open
+Server Manager, choose Add Roles and Features, and under Web Server (IIS) > Web Server >
+Application Development, check *Application Initialization*. Alternatively, run the following
+command in an elevated PowerShell:
+
+```powershell
+Install-WindowsFeature Web-AppInit
+```
+
+Then, in IIS Manager, find the Application Pool with the same name as the API website - usually 
+SPS Plus - API. It is located in the tree on the left under Application Pools. Right-click on it 
+and choose Advanced Settings. In the modal popup, set:
+
+- **Start Mode**: *AlwaysRunning* — IIS starts the application immediately after a recycle or a
+server restart, instead of waiting for the first request.
+- **Idle Time-out (minutes)**: *0* — prevents the application from shutting down due to inactivity.
+- **Regular Time Interval (minutes)** (under Recycling): *0* — disables the default recycle that
+occurs every 29 hours at unpredictable times. Optionally, set **Specific Times** to a quiet hour
+(for example *03:00:00*) to recycle the application once a day instead.
+- **.NET CLR Version**: *No Managed Code* — optional, but recommended as the app does not rely on
+loading the desktop CLR (.NET CLR).
+
+Finally, enable warmup on the API website itself. In the tree on the left, select the *SPS Plus - API*
+website, click Advanced Settings in the Actions pane on the right, and set **Preload Enabled** to
+*True*. With this setting, whenever the application pool starts, IIS immediately sends a warmup
+request to the application, so the slow initialization happens in the background instead of on the
+first user request.
+
+To verify the setup, restart the application pool without opening the website, wait about a minute,
+then open the website — it should load within a few seconds. You can also check in Task Manager that
+a *w3wp.exe* process for the API application pool is running even though no one has accessed the site.
+
+Also, change the .NET CLR Version value to *No Managed Code*. This is optional, but is also recommended 
+as the app does not rely on loading the desktop CLR (.NET CLR).
 
 ![file](./pictures/installation-app-pool-parameters.jpg "App Pool parameters")
 
