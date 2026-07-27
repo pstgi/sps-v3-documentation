@@ -2,6 +2,13 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.4.0.3 (2026-07-17)
+
+- Fixed on-premise data imports (student and MPAC batches) that failed to start.
+- Fixed a missing header on the Yield Template grid.
+- Improved long-running process handling and automatic cleanup.
+- Improved reliability of outbound service connections.
+
 # ver.4.0.2 (2026-07-15)
 
 - Added more localization values.
