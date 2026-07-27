@@ -9,7 +9,7 @@ These are the changes to each version that has been released in this project
 - Improved long-running process handling and automatic cleanup.
 - Improved reliability of outbound service connections.
 
-# ver.4.0.2 (2026-07-15)
+## ver.4.0.2 (2026-07-15)
 
 - Added more localization values.
 - Improved Study Area Assignment tab.
