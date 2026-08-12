@@ -2,10 +2,27 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.4.1.1 (2026-08-12)
+
+- Added Format Files and Sub-Batch Type records for Standard Student and MPAC imports.
+- Fixed displayed totals recalculation when changing Yield Template details.
+- Fixed saving Yield Template values in to wrong grade.
+- Fixed selection of different template in Yield Template dropdown.
+- Fixed retention calculation when Progression Rules have year gaps.
+- Added Progression Rule Year Offset to Scenarios.
+- Added Program Type to Study Area - Student Export.
+- Added Enrolment Master Batch types to Data Mover.
+- Some UI improvements.
+
+## ver.4.1.0 (2026-07-30)
+
+- Added ability to copy a Scenario and roll over Holding Rules.
+- Implemented smart truncation of long Auto Process messages.
+
 ## ver.4.0.3 (2026-07-17)
 
 - Fixed on-premise data imports (student and MPAC batches) that failed to start.
-- Fixed a missing header on the Yield Template grid.
+- Fixed a missing header row on the Yield Template grid.
 - Improved long-running process handling and automatic cleanup.
 - Improved reliability of outbound service connections.
 
