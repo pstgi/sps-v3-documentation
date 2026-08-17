@@ -2,6 +2,12 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.4.1.2 (2026-08-17)
+
+- Optimizes Sync-Addresses-from-Cloud when previous sync was interrupted.
+- Fixed issue with no Feeder School Analysis data when Scenario ID is 0.
+- Fixed issue with downloading Study Area Cloud Updates on some boards.
+
 ## ver.4.1.1 (2026-08-12)
 
 - Added Format Files and Sub-Batch Type records for Standard Student and MPAC imports.

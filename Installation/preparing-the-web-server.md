@@ -22,7 +22,7 @@ General requirements for Operating System
 |------------|------------------------------------------------------------|
 | OS Version | Windows Server 2022 (any version) - licensed and activated |
 | Web server | Internet Information Server                                |
-| SQL version| Microsoft SQL Server 2019 or higher                        |
+| SQL version| Microsoft SQL Server 2019 Standard or higher               |
 
 ## Installing required system components
 
