@@ -9,6 +9,7 @@ Navigate the table of contents below for easier access to the documentation.
 
 - [Preparing the web server](./Installation/preparing-the-web-server.md)
 - [Setting up IIS websites for the first time](./Installation/setting-up-iis-websites-for-the-first-time.md)
+- [Keeping the API application always running (optional)](./Installation/keeping-the-api-application-always-running.md)
 - [Setting up the network share](./Installation/setting-up-network-share.md)
 - [Updating the SPS Plus application](./Installation/updating-the-sps-plus-application.md)
 - [Upgrading from SPS Plus v3 to v4](./Installation/upgrade-v3-to-v4.md)
