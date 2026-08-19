@@ -1,11 +1,11 @@
 # Preparing the web server
 
 This section describes the preparation process of a new web server, preferably a virtual machine,
-where the SPS Plus application will be initially installed.
+where the SPS+ application will be initially installed.
 
 ## Hardware requirements
 
-Minimum Virtual Server requirements dedicated for only SPS Plus:
+Minimum Virtual Server requirements dedicated for only SPS+:
 
 | Parameter  | Minimum                                           |
 |------------|---------------------------------------------------|
@@ -26,7 +26,7 @@ General requirements for Operating System
 
 ## Installing required system components
 
-To install and run the SPS Plus web application, the server needs several components to be present.
+To install and run the SPS+ web application, the server needs several components to be present.
 
 ## Installing Web Server Role
 
@@ -57,7 +57,7 @@ a few minutes.
 
 ## Downloading and installing URL Rewrite Module 2.1
 
-To setup the SPS Plus application, you need to install the URL Rewrite module version 2.1 on IIS.
+To setup the SPS+ application, you need to install the URL Rewrite module version 2.1 on IIS.
 Visit the [official web page](https://www.iis.net/downloads/microsoft/url-rewrite) containing the
 module installer on the server from Microsoft's IIS website. At the bottom of the page, select 
 the English version of the x64 installer.
@@ -68,15 +68,15 @@ Install the downloaded module by double-clicking the installer and following its
 
 ## Downloading and installing ASP.NET Core 9.0 Hosting Bundles
 
-SPS Plus is developed using .NET 9.0 (LTS). To install the required runtimes, download the latest
+SPS+ is developed using .NET 9.0 (LTS). To install the required runtimes, download the latest
 release of [ASP.NET Core Runtimes 9 Hosting Bundles](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 from Microsoft's website.
 
-> WARNING! Downloading any other major version will not work with the SPS Plus application.
+> WARNING! Downloading any other major version will not work with the SPS+ application.
  
 ![file](./pictures/installation-net-core-runtime.jpg "Download .NET 9.0")
 
-These are all the steps required to prepare the server for an install SPS Plus.
+These are all the steps required to prepare the server for an install SPS+.
 
 ___
 

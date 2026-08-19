@@ -1,6 +1,6 @@
 # Keeping the API application always running
 
-By default, IIS starts the SPS Plus back-end application only when the first request arrives and
+By default, IIS starts the SPS+ back-end application only when the first request arrives and
 stops it after 20 minutes without visitors. This preserves energy and memory on the server, but the
 first user after a server restart, an application pool recycle, or a period of inactivity has to
 wait for the full application startup, which may take a long time. The optional instructions on
@@ -53,7 +53,7 @@ seconds instead of performing a full startup. Use this if memory on the server i
 ## Alternative: warmup script with a scheduled task
 
 The settings above make Windows start all *AlwaysRunning* applications at the same time when the
-server boots. If the server hosts several SPS Plus instances (or other heavy applications), the
+server boots. If the server hosts several SPS+ instances (or other heavy applications), the
 simultaneous startups compete for CPU and database connections, each one takes much longer than
 usual, and they can exceed the startup time limit and end up restarting in a loop. In that case,
 use a warmup script instead: it starts the applications strictly one at a time, waiting for each

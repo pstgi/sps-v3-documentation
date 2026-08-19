@@ -1,18 +1,18 @@
 # Setting up IIS websites for the first time
 
-The following are instructions on how to setup IIS for a new instance of the SPS Plus application on
+The following are instructions on how to setup IIS for a new instance of the SPS+ application on
 a new server. Please do not proceed with these steps if you did not complete the previous section,
-Preparing the web server of this document. If you already have SPS Plus installed on your server,
+Preparing the web server of this document. If you already have SPS+ installed on your server,
 you do not need to perform any of these steps.
 
 ## Create two websites in IIS
 
 The application has a front-end and a back-end component. Each needs a separate website in IIS.
 
-> These instructions demonstrate the configuration of SPS Plus for using it with the HTTP protocol. 
+> These instructions demonstrate the configuration of SPS+ for using it with the HTTP protocol. 
 You can configure the HTTPS protocol during this process, by providing an SSL certificate already 
 be installed on the server. You can configure the HTTPS while following these instructions or at a
-later time by checking [Configuring HTTPS protocol for SPS Plus](./configuring-https-protocol.md).
+later time by checking [Configuring HTTPS protocol for SPS+](./configuring-https-protocol.md).
 
 ### Create an IIS website for API component
 
@@ -21,7 +21,7 @@ you to have more space for the application files and logs, prevent the primary d
 and allow easier upgrade of the operating system.
 
 Create a new folder SPS Plus - API under your root IIS folder (usually D:\inetpub\wwwroot\SPS Plus).
-This will be the destination root folder of the SPS Plus application.
+This will be the destination root folder of the SPS+ application.
 
 Open IIS Manager, in the tree on the left, right-click Sites, then choose Add Website. In the modal
 popup, enter:
@@ -75,7 +75,7 @@ immediately, follow the optional instructions in
 ### Create a website for the front-end application
 
 Before you begin, we suggest stopping or removing the Default Web Site from your IIS. This will
-allow you to use default port 80 to access the SPS Plus front-end application. If you cannot do that,
+allow you to use default port 80 to access the SPS+ front-end application. If you cannot do that,
 we suggest setting port 4200 for the front-end application.
 
 In *IIS Manager*, right-click *Sites*, then choose *Add Website*. In the modal popup, enter:
@@ -98,9 +98,9 @@ At this point, you will have the two websites setup properly.
 Add inbound exception in the firewall of the server for TCP port 44301, where the API server is
 accessed. To do so, open Windows Defender Firewall and Advanced Security from Windows and add an
 Inbound Rule. Name it *PSTGI SPS Plus API server* for easy recognition. Allow traffic to the types of
-networks you intend to use SPS Plus on.
+networks you intend to use SPS+ on.
 
-These are all the steps needed to be configured on the server for SPS Plus to work properly.
+These are all the steps needed to be configured on the server for SPS+ to work properly.
 
 ___
 

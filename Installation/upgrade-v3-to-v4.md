@@ -1,10 +1,10 @@
-# Upgrading SPS v3 to v4
+# Upgrading SPS+ v3 to v4
 
-When upgrading from SPS v3 to v4, you need to update your Windows Server and prerequisites first.
+When upgrading from SPS+ v3 to v4, you need to update your Windows Server and prerequisites first.
 
 ## Installing .NET 9.0 runtimes
 
-You need to install the latest .NET 9.0.x runtimes on the server where SPS is hosted.
+You need to install the latest .NET 9.0.x runtimes on the server where SPS+ is hosted.
 
 To verify if you already have the required runtimes installed, run the following command in a terminal:
 ```bash
@@ -26,12 +26,12 @@ You can download the latest version of **ASP.NET Core Runtimes 9 > Hosting Bundl
 After you have made the necessary changes to the appsettings.json file and you ensured your web server prerequisites are met,
 you can proceed with upgrading the app files.
 
-To upgrade the app, follow the standard instructions [Updating the SPS Plus application](./updating-the-sps-plus-application.md)
+To upgrade the app, follow the standard instructions [Updating the SPS+ application](./updating-the-sps-plus-application.md)
 in this documentation.
 
-This concludes the whole process of upgrading from SPS v3 to v4. You do not need to do any changes 
+This concludes the whole process of upgrading from SPS+ v3 to v4. You do not need to do any changes 
 to the hosting server, IIS, or the database, except for the changes to the appsettings.json file described above.
 
 ___
 
-[Home](../README.md) / Next: [Updating the SPS Plus application](./updating-the-sps-plus-application.md)
+[Home](../README.md) / Next: [Updating the SPS+ application](./updating-the-sps-plus-application.md)

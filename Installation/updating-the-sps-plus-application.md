@@ -1,13 +1,13 @@
-# Updating the SPS Plus application
+# Updating the SPS+ application
 
-This section describes the process of updating an existing instance of the SPS Plus application.
+This section describes the process of updating an existing instance of the SPS+ application.
 
-> If you are looking for instructions on how to upgrade from SPS Plus v3 to v4, and you have not updates your
-appsettings.json file already, please refer to [Upgrade from SPS Plus v3 to v4](./upgrade-v3-to-v4.md)
+> If you are looking for instructions on how to upgrade from SPS+ v3 to v4, and you have not updated your
+appsettings.json file already, please refer to [Upgrade from SPS+ v3 to v4](./upgrade-v3-to-v4.md)
 documentation. If you have performed all steps in that documentation, you can proceed with the instructions
 in this document to update the app files.
 
-If you do not have an instance of the SPS Plus web application running on the web server, you need
+If you do not have an instance of the SPS+ web application running on the web server, you need
 to perform the tasks in [Preparing the web server](#preparing-the-web-server) and 
 [Setting up IIS websites for the first time](#setting-up-iis-websites-for-the-first-time) sections
 above.
@@ -61,7 +61,7 @@ copy the content of this folder directly inside the root folder of your installa
 will go to their proper locations - two in the root of the web app and one in a subfolder 
 *.\wwwroot\dist*.
 
-Start the two websites from your IIS. After a few seconds, you can check if the SPS Plus application
+Start the two websites from your IIS. After a few seconds, you can check if the SPS+ application
 is running properly. 
 
 Loading of the first page after a restart will take longer than usual (up to a minute).
