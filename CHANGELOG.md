@@ -1,6 +1,14 @@
-﻿# PSTGI's SPS+ - Change Log
+﻿# PSTGI's SPS Plus - Change Log
 
 These are the changes to each version that has been released in this project
+
+## ver.4.1.3 (2026-09-02)
+
+- Improved address suggestion rate for manual geocoding.
+- Fixed false-positive email misconfiguration error.
+- Validates geometries and makes them valid after reprojection of updated Study Areas.
+- Ensures the three default Report Groups exist in the database.
+- Some performance improvements.
 
 ## ver.4.1.2 (2026-08-17)
 
@@ -12,7 +20,7 @@ These are the changes to each version that has been released in this project
 
 - Added Format Files and Sub-Batch Type records for Standard Student and MPAC imports.
 - Fixed displayed totals recalculation when changing Yield Template details.
-- Fixed saving Yield Template values in to wrong grade.
+- Fixed saving Yield Template values in the wrong grade.
 - Fixed selection of different template in Yield Template dropdown.
 - Fixed retention calculation when Progression Rules have year gaps.
 - Added Progression Rule Year Offset to Scenarios.
