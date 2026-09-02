@@ -28,6 +28,11 @@ coming months.
 Currently, the updates are performed manually. Request an update from the PSTGI team to get the 
 latest version.
 
+## Publishing
+
+The documentation is published on GitHub Pages automatically, after `master branch is committed and pushed.
+The public pages are available at [https://pstgi.github.io/sps-v3-documentation/](https://pstgi.github.io/sps-v3-documentation/).
+
 ---
 Good luck!
 
