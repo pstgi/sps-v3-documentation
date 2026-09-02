@@ -2,6 +2,11 @@
 
 These are the changes to each version that has been released in this project
 
+## ver.4.1.4 (2026-09-02)
+
+- Fixed timeout on the zone check when importing student data from file.
+- Fixed seeding of the default format files and Sub-Batch Types when the import runs on-premise.
+
 ## ver.4.1.3 (2026-09-02)
 
 - Improved address suggestion rate for manual geocoding.
