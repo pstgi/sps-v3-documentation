@@ -1,6 +1,10 @@
 ﻿# PSTGI's SPS Plus - Change Log
 
-These are the changes to each version that has been released in this project
+The following are changes in each version that has been released.
+
+## ver.4.1.5 (2026-09-09)
+
+- Fixed Scenario Calculation modal closing after Validate instead of staying open for Calculate.
 
 ## ver.4.1.4 (2026-09-02)
 
@@ -10,6 +14,7 @@ These are the changes to each version that has been released in this project
 
 ## ver.4.1.3 (2026-09-02)
 
+- Boundary Analysis now selects student data by Master Batch.
 - Improved address suggestion rate for manual geocoding.
 - Fixed false-positive email misconfiguration error.
 - Validates geometries and makes them valid after reprojection of updated Study Areas.
