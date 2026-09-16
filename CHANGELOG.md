@@ -2,6 +2,10 @@
 
 The following are changes in each version that has been released.
 
+## ver.4.1.6 (2026-09-16)
+
+- Fixed Development Plan and Registered Plan links in Development Tracking opening the first plan instead of the linked one.
+
 ## ver.4.1.5 (2026-09-09)
 
 - Fixed Scenario Calculation modal closing after Validate instead of staying open for Calculate.
