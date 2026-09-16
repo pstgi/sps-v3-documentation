@@ -2,6 +2,10 @@
 
 The following are changes in each version that has been released.
 
+## ver.4.1.7 (2026-09-16)
+
+- Fixed the school status icon on the Scenario Calculation screen not opening the School Validation details.
+
 ## ver.4.1.6 (2026-09-16)
 
 - Fixed Development Plan and Registered Plan links in Development Tracking opening the first plan instead of the linked one.
