@@ -22,7 +22,7 @@ The SPS+ project is in continuous development. New releases include new features
 and other improvements. Information about the different versions of the SPS+ app can be found in the
 [Change Log](./CHANGELOG.md) file.
 
-The current version of SPS+ is v4 (ver.4.1.2). Version 5 (ver.5.0.0) is planned for release in the
+The current version of SPS+ is v4 (ver.4.1.7). Version 5 (ver.5.0.0) is planned for release in the
 coming months.
 
 Currently, the updates are performed manually. Request an update from the PSTGI team to get the 
@@ -30,7 +30,7 @@ latest version.
 
 ## Publishing
 
-The documentation is published on GitHub Pages automatically, after `master branch is committed and pushed.
+The documentation is published on GitHub Pages automatically, after the `main` branch is committed and pushed.
 The public pages are available at [https://pstgi.github.io/sps-v3-documentation/](https://pstgi.github.io/sps-v3-documentation/).
 
 ---
