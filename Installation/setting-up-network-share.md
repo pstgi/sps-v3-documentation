@@ -122,7 +122,7 @@ To add the user to the *IIS_IUSRS* group, follow these steps:
 1. In the *Enter the object names to select* field, enter *IIS_IUSRS* and click *Check Names*.
 1. The group should be found and displayed. Click *OK*.
 
-![file](./pictures/installation-add-user-to-group.jpg "Add to group")
+    ![file](./pictures/installation-add-user-to-group.jpg "Add to group")
 
 At this point, you should have a user with the same username and password on both the SQL server.
 It would also be a member of the *IIS_IUSRS* group, which will allow it to run the SPS+ backend.
@@ -139,7 +139,7 @@ It would also be a member of the *IIS_IUSRS* group, which will allow it to run t
 1. In the IIS Manager, click *Recycle* to restart the App Pool.
 1. In the *Sites* section, start the *SPS Plus - API* website.
 
-![file](./pictures/installation-iis-app-pool-set-credentials.jpg "Set App Pool credentials")
+    ![file](./pictures/installation-iis-app-pool-set-credentials.jpg "Set App Pool credentials")
 
 > For SPS 1.0 to use the same import process and folders, you need to set the same user and 
 password in the SPS 1.0 website on IIS > Advanced settings > *Physical Path Credentials* property.
@@ -152,11 +152,10 @@ and that the web app server can access using the user account you created.
 ### Application pool stops
 
 If the Application Pool stops by itself after you set the custom user, check for errors in Event Viewer >
-Windows Logs > System. You may see errors like "Windows Process Activation Service (WAS) encountered a failure 
+Windows Logs > System. You may see errors like "Windows Process Activation Service (WAS) encountered a failure
 when it started a worker process to serve the application pool". 
 
 ![file](./pictures/installation-newtork-share-was-error.jpg "WAS error")
-
 
 It usually means that the user you set does not have the permission to log in as a batch job (non-interactive
 login). To fix this, follow these steps:
@@ -167,6 +166,34 @@ login). To fix this, follow these steps:
 1. Add the *pstgiimportuser* user you created to the list.
 
 ![file](./pictures/installation-newtork-share-batch-job.jpg "Log on as a service")
+
+### Testing the users 
+
+To test if the users were set up correctly and can access the network share, you can try connecting to the shared folder
+without any intermediary app. Open Windows Terminal (Command Prompt) and run the following command
+
+`net use \\{sql-server-name}\Imports /user:pstgiimportuser *`
+
+, where `{sql-server-name}` is the network name of the server as you see it in the Network Files and Folders Sharing window.
+Change `Imports` if you named the folder differently.
+
+You will be asked to enter the password of the user.
+
+Immediately after that, the response should be "The command completed successfully". Any other 
+response may mean you did not set the credetials correctly or one of the accounts is locked.
+
+To very you can access to the folder, you can run
+
+`dir \\{sql-server-name}\Imports`
+
+You will see some contents of a folder.
+
+When you are done, it is good to disconnect from the server by running
+
+`net use \\{sql-server-name}\Imports /delete`
+
+If any of these commands return an error, try to resolve it with your IT administrators as it relates to your
+network configuration.
 
 ___
 
