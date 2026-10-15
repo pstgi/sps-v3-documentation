@@ -2,6 +2,25 @@
 
 The following are changes in each version that has been released.
 
+## ver.4.1.9 (2026-10-15)
+
+- Fixed Progression Rules added with Direction set to In being saved under the wrong school.
+- Fixed Reference Sets not showing in Enrolment Projection when the filter is set to ALL.
+- Fixed being unable to create a Reference Set when none are listed.
+- Fixed the wrong Program Type and Grade being shown when opening Progression Rules.
+- The Clone Tool now opens on the year before the Scenario starts and on the selected Program.
+- Fixed the Clone Tool's year list missing the Scenario's final year.
+- Study Area exports now give consistent results and accept long Program Type codes.
+- Added validation for the rotation direction of Study Area polygons.
+- Added address assignment to the Study Area progress steps.
+- Fixed Reset Geocoding and MPAC Master Batch reset timing out after 90 seconds instead of 90 minutes.
+- Added Excel export of Notice message details.
+
+## ver.4.1.8 (2026-09-21)
+
+- Fixed Progression Rules showing and creating rules that belong to another Scenario.
+- Fixed Sub-Batch Type edits not being picked up by the import until restart.
+
 ## ver.4.1.7 (2026-09-16)
 
 - Fixed the school status icon on the Scenario Calculation screen not opening the School Validation details.
