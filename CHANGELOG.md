@@ -2,6 +2,10 @@
 
 The following are changes in each version that has been released.
 
+## ver.4.1.10 (2026-10-19)
+
+- The configuration warning is now shown only to Admins.
+
 ## ver.4.1.9 (2026-10-15)
 
 - Fixed Progression Rules added with Direction set to In being saved under the wrong school.
