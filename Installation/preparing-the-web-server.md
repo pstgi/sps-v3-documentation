@@ -78,6 +78,28 @@ from Microsoft's website.
 
 These are all the steps required to prepare the server for an install SPS+.
 
+## Setting up MS SQL Server
+
+### Database permissions
+
+For the SPS+ application to work properly, the user account that will be used to connect to the
+particular SPS+ database on the MS SQL Server must have the following permissions:
+
+- **db_owner** on the SPS+ database
+- **bulkadmin** on the Server instance
+
+### Compatibility level and Recovery model
+
+You have to also make sure that the actual SPS+ database (restored or new) is set to have
+*Compatibility level* to SQL Server 2022 (160) or higher. This can be set by right-clicking on 
+the database in SQL Server Management Studio, selecting *Properties*, then *Options*, 
+and changing the *Compatibility level* to SQL Server 2022 (160).
+
+For the *Recovery model*, it is recommended to set it to *Simple*. This can be set at the same
+modal windows.
+
+Set these up before you set up the SPS+ application in IIS. If you are not sure how to do this, 
+please contact PSTGI support
 ___
 
 [Home](../README.md) / Next: [Setting up IIS websites for the first time](./setting-up-iis-websites-for-the-first-time.md)
