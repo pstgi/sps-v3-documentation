@@ -2,6 +2,17 @@
 
 The following are changes in each version that has been released.
 
+## ver.4.1.12 (2026-11-02)
+
+- Add support for the November 2026 permanent-DST change in Canada: British Columbia Standard Time, Alberta Standard Time, Manitoba Standard Time.
+
+## ver.4.1.11 (2026-10-28)
+
+- Fixed Latitude and Longitude being swapped on Student maps when using the WGS84 coordinate system.
+- Fixed the Progression Rules Tool not creating any rules.
+- Fixed the Progression Rules Tool not showing that a build is running.
+- Deleting Progression Factors now flags the Scenario for recalculation.
+
 ## ver.4.1.10 (2026-10-19)
 
 - The configuration warning is now shown only to Admins.
