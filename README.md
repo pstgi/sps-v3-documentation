@@ -14,6 +14,7 @@ Navigate the table of contents below for easier access to the documentation.
 - [Updating the SPS+ application](./Installation/updating-the-sps-plus-application.md)
 - [Upgrading from SPS+ v3 to v4](./Installation/upgrade-v3-to-v4.md)
 - [Configuring HTTPS protocol for SPS+](./Installation/configuring-https-protocol.md)
+- [Canadian time zone changes (November 2026)](./Installation/canadian-time-zone-changes-2026.md)
 - [Change Log](./CHANGELOG.md)
 
 ## Versions and updates
