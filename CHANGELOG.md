@@ -2,6 +2,10 @@
 
 The following are changes in each version that has been released.
 
+## ver.4.1.13 (2026-11-03)
+
+- Fixed the Sync from Cloud warning showing already downloaded addresses as new addresses available for download.
+
 ## ver.4.1.12 (2026-11-02)
 
 - Add support for the November 2026 permanent-DST change in Canada: British Columbia Standard Time, Alberta Standard Time, Manitoba Standard Time.
