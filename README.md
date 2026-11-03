@@ -1,4 +1,4 @@
-﻿# PSTGI's SPS+ Documentation
+# PSTGI's SPS+ Documentation
 
 This is the official documentation for SPS+. It is a work in progress and will be updated as
 the project progresses.
