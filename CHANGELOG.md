@@ -2,6 +2,12 @@
 
 The following are changes in each version that has been released.
 
+## ver.4.1.14 (2026-11-18)
+
+- Added the Year column to the Historic Retention Rates export.
+- Fixed the timeout when editing a Study Area from the cloud. Editing now works with latitude and longitude only.
+- Fixed the missing Save label on the Edit Sub-Batch Type and Edit Data Mapping windows.
+
 ## ver.4.1.13 (2026-11-03)
 
 - Fixed the Sync from Cloud warning showing already downloaded addresses as new addresses available for download.
